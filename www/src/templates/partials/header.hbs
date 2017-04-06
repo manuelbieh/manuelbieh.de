@@ -1,0 +1,26 @@
+<header>
+    <div class="grid fixed">
+        <div class="row">
+            <div class="col col-xs-12">
+                <hgroup>
+                    <h1>Manuel Bieh</h1>
+                    <h2>JavaScript. React. Node.js.</h2>
+                </hgroup>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-12">
+                <nav>
+                    <ul>
+                        {{!-- {{{_inspect .}}} --}}
+                        {{#each topbar.items}}
+                            <li {{#is file ../filename}}class="active"{{/is}}>
+                                <a href="{{relative 'index.html' file}}">{{title}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

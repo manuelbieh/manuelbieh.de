@@ -1,0 +1,19 @@
+#profile {
+
+    @include respond-to(md) {
+        img {
+            max-width: 25%;
+        }
+    }
+
+    table {
+        tr:nth-child(2n) {
+            background: $color-grey-95;
+        }
+    }
+
+    .cell-01 {
+        width: 96px;
+    }
+
+}

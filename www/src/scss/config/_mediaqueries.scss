@@ -1,0 +1,40 @@
+$bp-xs:      0px !default;
+$bp-sm:    480px !default;
+$bp-md:    768px !default;
+$bp-lg:   1024px !default;
+$bp-xl:   1280px !default;
+$bp-xxl:  1440px !default;
+
+$mq-xs:   "all and (min-width: #{$bp-xs})" !default;
+$mq-sm:   "all and (min-width: #{$bp-sm})" !default;
+$mq-md:   "all and (min-width: #{$bp-md})" !default;
+$mq-lg:   "all and (min-width: #{$bp-lg})" !default;
+$mq-xl:   "all and (min-width: #{$bp-xl})" !default;
+$mq-xxl:  "all and (min-width: #{$bp-xxl})" !default;
+
+$media-queries: (
+    xs:   $mq-xs,
+    sm:   $mq-sm,
+    md:   $mq-md,
+    lg:   $mq-lg,
+    xl:   $mq-xl,
+    xxl:  $mq-xxl
+);
+
+$fixed-widths: (
+    xs:   320px,
+    sm:   $bp-sm,
+    md:   $bp-md,
+    lg:   $bp-lg,
+    xl:   $bp-xl,
+    xxl:  $bp-xxl
+);
+
+$grid-cell-padding-h:     8px !default;
+$grid-cell-padding-v:     8px !default;
+$grid-cell-margin-h:      16px !default; // "gutter size"
+$grid-cell-margin-v:      16px !default;
+
+$grid-max-width:    100% !default; // or: $bp-xxl;
+
+$debug: false;

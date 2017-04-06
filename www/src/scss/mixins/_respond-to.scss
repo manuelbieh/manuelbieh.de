@@ -1,0 +1,41 @@
+@import "../config/mediaqueries";
+
+@mixin respond-to($media) {
+
+  @if $media == xs or $media == xsmall or $media == phone {
+    @media #{$mq-xs} { @content; }
+  }
+
+  @else if $media == sm or $media == small or $media == phone-landscape {
+    @media #{$mq-sm} { @content; }
+  }
+
+  @else if $media == md or $media == medium or $media == tablet-portrait {
+    @media #{$mq-md} { @content; }
+  }
+
+  @else if $media == lg or $media == large {
+    @media #{$mq-lg} { @content; }
+  }
+
+  // @else if $media == medium-large or $media == tablet {
+  //   @media #{$mq-mdlg} { @content; }
+  // }
+
+  @else if $media == xl or $media == xlarge or $media == desktop {
+    @media #{$mq-xl} { @content; }
+  }
+
+  @else if $media == xxl or $media == xxlarge or $media == large-desktop {
+    @media #{$mq-xxl} { @content; }
+  }
+
+//   @else if $media == large-down or $media == tablet-and-below {
+//     @media #{$mq-large-down} { @content; }
+//   }
+
+//   @else if $media == medium-up or $media == tablet-and-above {
+//     @media #{$mq-medium-up} { @content; }
+//   }
+
+}

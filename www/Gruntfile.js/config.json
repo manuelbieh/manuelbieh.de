@@ -1,0 +1,6 @@
+{
+	"dirs": {
+		"src":"src",
+		"dist":"dist"
+	}
+}

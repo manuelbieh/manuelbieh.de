@@ -1,0 +1,39 @@
+{
+  "name": "karmaplus-landingpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Manuel Bieh <node@manuelbieh.de> (https://github.com/manuelbieh)",
+  "license": "MIT",
+  "devDependencies": {
+    "@manuel-bieh/cv": "^1.0.1",
+    "assemble": "^0.23.0",
+    "autoprefixer": "^6.7.7",
+    "cssnano": "^3.10.0",
+    "eslint-config-wiremore": "^1.0.3",
+    "grunt": "^1.0.1",
+    "grunt-assemble": "^0.6.3",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.4.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^2.0.0",
+    "helper-moment": "^0.2.0",
+    "jit-grunt": "^0.10.0",
+    "time-grunt": "^1.4.0"
+  },
+  "dependencies": {
+    "@wiremore/css-grid": "^1.0.0",
+    "grunt-assemble-permalinks": "^0.1.1",
+    "grunt-concurrent": "^2.3.1",
+    "normalize-scss": "^6.0.0"
+  }
+}

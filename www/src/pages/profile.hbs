@@ -1,0 +1,100 @@
+<div class="grid fixed" id="profile">
+    <div class="row">
+        <div class="col col-xs-12">
+            <h1>{{profile.title}}</h1>
+            <div class="content xs-image-right">
+                <img src="/assets/img/manuel-portrait-01.jpg"/>
+                <div class="text">
+                    {{{profile.intro}}}
+                </div>
+            </div>
+            <h2>Berufliche Praxis</h2>
+            <table>
+                {{#each work}}
+                    <tr>
+                        <td class="cell-01">
+                            {{#if endDate}}
+                                {{moment startDate format="YYYY-MM" }}–<br />
+                                {{moment endDate format="YYYY-MM"}}
+                            {{else}}
+                                {{../i18n.since}}<br />
+                                {{moment startDate format="YYYY-MM" }}
+                            {{/if}}
+
+                        </td>
+                        <td class="cell-02">
+                            <strong>{{position}}</strong><br />
+                            {{company}}
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+
+            <h2>Weiterbildung</h2>
+            <table>
+                {{#each education}}
+                    <tr>
+                        <td class="cell-01">
+
+                            {{moment startDate format="YYYY-MM" }}– <br />
+
+                            {{#if endDate}}
+                                {{moment endDate format="YYYY-MM"}}
+                            {{else}}
+                                {{../i18n.today}}
+                            {{/if}}
+
+                        </td>
+                        <td class="cell-02">
+                            <strong>{{studyType}}</strong><br />
+                            {{institution}}
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+
+            <h2>Qualifikationen/Abschlüsse</h2>
+            <ul>
+                {{#each qualifications}}
+                <li>
+                    {{.}}
+                </li>
+                {{/each}}
+            </ul>
+
+            <h2>Skills</h2>
+
+            <h3>Fundiertes Fachwissen</h3>
+            <p>
+                <strong>Technisch:</strong>
+                {{#each skills.technical.proficient}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}
+            </p>
+            <p>
+                <strong>Betriebswirtschaftlich:</strong>
+                {{#each skills.economic.proficient}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}
+            </p>
+
+            <h3>Gute Kenntnisse</h3>
+            <p>
+                <strong>Technisch:</strong>
+                {{#each skills.technical.intermediate}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}
+            </p>
+            <p>
+                <strong>Betriebswirtschaftlich:</strong>
+                {{#each skills.economic.intermediate}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}
+            </p>
+
+            <h3>Grundkenntnisse</h3>
+            <p>
+                <strong>Technisch:</strong>
+                {{#each skills.technical.basic}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}
+            </p>
+            <p>
+                <strong>Betriebswirtschaftlich:</strong>
+                {{#each skills.economic.basic}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}
+            </p>
+
+
+        </div>
+    </div>
+</div>

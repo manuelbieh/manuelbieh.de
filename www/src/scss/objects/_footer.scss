@@ -1,0 +1,27 @@
+footer {
+
+    padding: 16px;
+    vertical-align: middle;
+    position: relative;
+
+    &:before {
+        content: "";
+        background: $color-section-03-bg;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: skewY(-1.25deg) translate3d(0, 0, 0) scale(1.25);
+        bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        height: 32px;
+    }
+
+}

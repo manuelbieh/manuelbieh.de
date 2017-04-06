@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Classic Round';
+    src: url('../fonts/classicround-regular-webfont.eot');
+    src: url('../fonts/classicround-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/classicround-regular-webfont.woff') format('woff'),
+         url('../fonts/classicround-regular-webfont.ttf') format('truetype'),
+         url('../fonts/classicround-regular-webfont.svg#classic_roundregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Classic Round';
+    src: url('../fonts/classicround-italic-webfont.eot');
+    src: url('../fonts/classicround-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/classicround-italic-webfont.woff') format('woff'),
+         url('../fonts/classicround-italic-webfont.ttf') format('truetype'),
+         url('../fonts/classicround-italic-webfont.svg#classic_rounditalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Classic Round';
+    src: url('../fonts/classicround-medium-webfont.eot');
+    src: url('../fonts/classicround-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/classicround-medium-webfont.woff') format('woff'),
+         url('../fonts/classicround-medium-webfont.ttf') format('truetype'),
+         url('../fonts/classicround-medium-webfont.svg#classic_round_mediumregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Classic Round';
+    src: url('../fonts/classicround-bold-webfont.eot');
+    src: url('../fonts/classicround-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/classicround-bold-webfont.woff') format('woff'),
+         url('../fonts/classicround-bold-webfont.ttf') format('truetype'),
+         url('../fonts/classicround-bold-webfont.svg#classic_roundbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
