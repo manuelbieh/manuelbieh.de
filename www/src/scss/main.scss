@@ -1,9 +1,6 @@
-$debug: false;
-$bp-xxl: 1280px;
+@import "config/config";
+@import "mixins/mixins";
 
-@import "config/colors";
-@import "config/fonts";
-@import "mixins/respond-to";
 @import "@wiremore/css-grid/src/grid";
 @import "normalize-scss/sass/normalize";
 @include normalize();
@@ -14,3 +11,4 @@ $bp-xxl: 1280px;
 
 @import "pages/customers";
 @import "pages/profile";
+@import "pages/publications";

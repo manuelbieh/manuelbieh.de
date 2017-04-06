@@ -1,0 +1,42 @@
+book:
+    title: Buch
+    items:
+        -
+            title: Mobiles Webdesign – Konzeption, Gestaltung, Entwicklung
+            image: /assets/img/publications/mobiles-webdesign.png
+            description: |
+                <p>Mobiles Internet ist Realität. Jeder, der Websites betreibt, gestaltet, konzipiert oder entwickelt,
+                muss sich mit dem Thema auseinandersetzen. Dabei geht es natürlich zunächst um die Fragen, wann ein mobiler
+                Auftritt sinnvoll ist, welcher Content ausgewählt und wie der Auftritt schließlich konzipiert werden soll.</p>
+                <p><strong>Galileo Press, Bonn, ISBN 978-3836211536, 302 Seiten, Juni 2008</strong></p>
+
+
+articles:
+    title: Magazin-Artikel
+    items:
+        -
+            title: Interview Mobiles Webdesign
+            image: /assets/img/publications/internet-intern-0211.jpg
+            description: |
+                <p>Für die Ausgabe 2/2011 der Fachzeitschrift Internet Intern wurde ich zum Thema „Mobiles Webdesign“
+                befragt. Dabei geht es vor allem um Aspekte die beim Design und der Konzeption einer mobilen Seite
+                beachtet werden müssen. Aber auch die eigentliche Entwicklung wird kurz angerissen. Abgeschlossen wird
+                das Interview von einer kurzen Checkliste mit Punkten die es bei der mobilen Websiten-Entwicklung zu
+                beachten gibt. Das Interview in voller Länge gibt es online nachzulesen.</p>
+            source: Internet Intern, Ausgabe 02/11.
+            link: /de/publications/interview-mobiles-webdesign.html
+            linktext: Weiterlesen
+
+        -
+            title: Mobile Möglichkeiten – Tools für die Entwicklung mobiler Webseiten
+            image: /assets/img/publications/webstandads-magazin-11.jpg
+            description: |
+                <p>Wer heute eine mobile Webseite erstellen möchte, wird vor eine
+                Vielzahl von Entscheidungen gestellt: Kostenlos oder kostenpflichtig?
+                Entwicklung auf Code-Ebene oder per WYSIWYG? Serverseitige
+                oder clientseitige Lösungen? Mittlerweile gibt es eine Menge
+                unterschiedlicher Lösungsansätze, von denen jeder seine eigenen
+                Vor- und Nachteile mit sich bringt.</p>
+            source: Webstandards-Magazin, Ausgabe 11/11.
+            link: /assets/downloads/034-038_mobile-moeglichkeiten_manuel-bieh.pdf
+            linktext: Download [687 KB]

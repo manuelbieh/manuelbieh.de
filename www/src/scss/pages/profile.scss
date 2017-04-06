@@ -1,10 +1,4 @@
-#profile {
-
-    @include respond-to(md) {
-        img {
-            max-width: 25%;
-        }
-    }
+.profile {
 
     table {
         tr:nth-child(2n) {

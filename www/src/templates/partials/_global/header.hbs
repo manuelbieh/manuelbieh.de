@@ -13,9 +13,12 @@
                 <nav>
                     <ul>
                         {{!-- {{{_inspect .}}} --}}
-                        {{#each topbar.items}}
+                        <li style="float: right">
+                            <a href="/en">EN</a> | <a href="/de">DE</a>
+                        </li>
+                        {{#each topbar}}
                             <li {{#is file ../filename}}class="active"{{/is}}>
-                                <a href="{{relative 'index.html' file}}">{{title}}</a>
+                                <a href="/{{../language}}/{{file}}">{{title}}</a>
                             </li>
                         {{/each}}
                     </ul>

@@ -18,7 +18,6 @@ main {
 }
 // flexbox end
 
-
 body {
     overflow-x: hidden;
     line-height: 1.6;
@@ -81,6 +80,13 @@ table {
 td {
     border-bottom: 1px solid $color-grey-82;
     padding: 8px;
+}
+
+a {
+    color: $color-highlight;
+    &:hover {
+        color: $color-primary;
+    }
 }
 
 .grid {

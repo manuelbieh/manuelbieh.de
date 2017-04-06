@@ -4,7 +4,9 @@
             <div class="row">
                 <div class="col col-xs-12 center">
                     <p>
-                        © 2001-<span id="footer--year">{{year}}</span> Manuel Bieh – Impressum Kontakt
+                        © 2001-<span id="footer--year">{{year}}</span> Manuel Bieh –
+                        <a href="/{{language}}/legal.html">{{i18n.legal}}</a> |
+                        <a href="/{{language}}/contact.html">{{i18n.contact}}</a>
                         <script>document.getElementById('footer--year').textContent = (new Date()).getFullYear();</script>
                     </p>
                     <p>
@@ -22,6 +24,12 @@
                         </a>
                         <a href="https://www.instagram.com/manuelbieh/">
                             <img src="/assets/img/socialmedia/instagram.svg" class="social-media-icon" />
+                        </a>
+                        <a href="https://www.quora.com/profile/Manuel-Bieh">
+                            <img src="/assets/img/socialmedia/quora.svg" class="social-media-icon" />
+                        </a>
+                        <a href="https://angel.co/manuelbieh">
+                            <img src="/assets/img/socialmedia/angellist.svg" class="social-media-icon" />
                         </a>
                     </p>
                 </div>

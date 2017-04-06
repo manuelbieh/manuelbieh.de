@@ -10,8 +10,9 @@ module.exports = function(grunt) {
             ],
             layout: 'default.hbs',
             layoutdir: '<%= config.dirs.src %>/templates/layouts',
-            partials: '<%= config.dirs.src %>/templates/partials/*.hbs',
+            partials: '<%= config.dirs.src %>/templates/partials/**/*.hbs',
             data: '<%= config.dirs.src %>/data/*.{json,yml}',
+            siteurl: 'https://www.manuelbieh.de/',
             year: (new Date()).getFullYear(),
             // plugins: [
             //     'grunt-assemble-permalinks'
@@ -35,11 +36,24 @@ module.exports = function(grunt) {
                     '<%= config.dirs.src %>/data/de/*.{json,yml}',
                 ]
             },
-            files: {
-                '<%= config.dirs.dist %>/de/': [
-                    '<%= config.dirs.src %>/pages/*.hbs'
-                ]
-            }
+            files: [
+                {
+                    expand: true,
+                    cwd: '<%= config.dirs.src %>/pages/',
+                    src: [
+                        '*.hbs',
+                    ],
+                    dest: '<%= config.dirs.dist %>/de/'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= config.dirs.src %>/pages/publications/de/',
+                    src: [
+                        '*.hbs'
+                    ],
+                    dest: '<%= config.dirs.dist %>/de/publications'
+                }
+            ],
         },
         en: {
             options: {
@@ -50,11 +64,25 @@ module.exports = function(grunt) {
                     '<%= config.dirs.src %>/data/en/*.{json,yml}',
                 ]
             },
-            files: {
-                '<%= config.dirs.dist %>/en/': [
-                    '<%= config.dirs.src %>/pages/*.hbs'
-                ]
-            }
+            files: [
+                {
+                    expand: true,
+                    cwd: '<%= config.dirs.src %>/pages/',
+                    src: [
+                        '*.hbs',
+                    ],
+                    dest: '<%= config.dirs.dist %>/en/'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= config.dirs.src %>/pages/',
+                    src: [
+                        'publications/en/*.hbs'
+                    ],
+                    dest: '<%= config.dirs.dist %>/en/'
+                },
+
+            ],
         }
     });
 

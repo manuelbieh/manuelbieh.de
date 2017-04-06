@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>{{title}}</title>
-<link href="{{assets}}/css/main.css" rel="stylesheet" type="text/css" />
-</head>
+{{> head }}
 <body>
 {{> header }}
 <main>
-{{> body }}
+<div class="grid fixed">
+    <div class="row">
+        <div class="col col-xs-12">
+            {{> body }}
+        </div>
+    </div>
+</div>
 </main>
 {{> footer }}
 </body>

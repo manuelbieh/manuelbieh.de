@@ -1,16 +1,12 @@
-<div class="grid fixed">
-    <div class="row">
-        <div class="col col-xs-12">
-            <h1>{{customers.title}}</h1>
-            <p>
-                {{customers.intro}}
-            </p>
-            <section class="customer-logos">
-                {{#each customer-logos.items ~}}
-                    <img src="{{image}}" />
-                {{/each~}}
-            </section>
-        </div>
-    </div>
+<div class="customers">
+
+    <h1>{{customers.title}}</h1>
+    {{{customers.intro}}}
+    <section class="customer-logos">
+        {{#each customer-logos.items ~}}
+            <img src="{{image}}" />
+        {{/each~}}
+    </section>
+    <p><small>{{customers.note}}</small></p>
 
 </div>

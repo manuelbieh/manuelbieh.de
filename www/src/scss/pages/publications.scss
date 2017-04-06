@@ -1,0 +1,28 @@
+.publications {
+
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        width: 320px;
+    }
+
+    @include respond-to(md) {
+
+        h3 {
+            margin-top: 0;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            max-width: 160px;
+        }
+
+    }
+
+    .publication {
+        margin-bottom: 40px;
+    }
+
+}

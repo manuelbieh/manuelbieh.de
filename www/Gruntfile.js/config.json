@@ -1,6 +1,6 @@
 {
 	"dirs": {
-		"src":"src",
-		"dist":"dist"
+		"src": "src",
+		"dist": "dist"
 	}
 }

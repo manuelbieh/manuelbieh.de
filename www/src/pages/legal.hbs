@@ -1,0 +1,7 @@
+<h1>{{legal.title}}</h1>
+
+{{#each legal.content}}
+    <h2>{{headline}}</h2>
+    {{#if subheadline}}<h3>{{subheadline}}</h3>{{/if}}
+    {{{text}}}
+{{/each}}

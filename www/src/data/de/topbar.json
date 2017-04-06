@@ -1,24 +1,22 @@
 {
-    "items": [
-        {
-            "title": "Startseite",
-            "file": "index.html"
-        },
-        {
-            "title": "Profil",
-            "file": "profile.html"
-        },
-        {
-            "title": "Kunden",
-            "file": "customers.html"
-        },
-        {
-            "title": "Technologien",
-            "file": "technologies.html"
-        },
-        {
-            "title": "Publikationen",
-            "file": "publications.html"
-        }
-    ]
+    "home": {
+        "title": "Startseite",
+        "file": "index.html"
+    },
+    "profile": {
+        "title": "Profil",
+        "file": "profile.html"
+    },
+    "customers": {
+        "title": "Kunden",
+        "file": "customers.html"
+    },
+    "technologies": {
+        "title": "Technologien",
+        "file": "technologies.html"
+    },
+    "publications": {
+        "title": "Publikationen",
+        "file": "publications.html"
+    }
 }

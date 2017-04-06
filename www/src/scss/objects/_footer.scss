@@ -18,6 +18,10 @@ footer {
 
     a {
         text-decoration: none;
+        color: $color-primary;
+        &:hover {
+            color: $color-grey-100;
+        }
     }
 
     img {

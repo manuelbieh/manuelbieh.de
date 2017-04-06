@@ -21,6 +21,11 @@
             "url":"https://www.c3.co/"
         },
         {
+            "name": "Fotocommunity.de",
+            "image": "/assets/img/customers/fotocommunity.svg",
+            "url":"https://www.fotocommunity.de/"
+        },
+        {
             "name": "Handelsblatt",
             "image": "/assets/img/customers/handelsblatt.svg",
             "url":"http://www.handelsblatt.com/"
@@ -66,9 +71,19 @@
             "url":"https://www.adidas.de/"
         },
         {
+            "name": "Amakuria",
+            "image": "/assets/img/customers/amakuria.svg",
+            "url":"https://www.amakuria.de/"
+        },
+        {
             "name": "Candis GmbH",
             "image": "/assets/img/customers/candis.svg",
             "url":"https://www.candis.io/"
+        },
+        {
+            "name": "Zeotap GmbH",
+            "image": "/assets/img/customers/zeotap.svg",
+            "url":"https://www.zeotap.com/"
         },
         {
             "name": "Zalando",

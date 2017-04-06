@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "title": "Startseite",
+            "file": "index.html"
+        },
+        {
+            "title": "Profil",
+            "file": "profile.html"
+        },
+        {
+            "title": "Kunden",
+            "file": "customers.html"
+        },
+        {
+            "title": "Technologien",
+            "file": "technologies.html"
+        },
+        {
+            "title": "Publikationen",
+            "file": "publications.html"
+        }
+    ]
+}
