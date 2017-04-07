@@ -17,4 +17,13 @@ module.exports = function(grunt) {
 
     });
 
+    grunt.registerTask('build', 'Builds everything for production', () => {
+        grunt.task.run([
+            'clean:pre',
+            'copy:prod',
+            'assemble',
+            'sass:prod'
+        ]);
+    });
+
 };

@@ -1,26 +1,26 @@
 title: Technologien
 intro: |
-    <p>In den knapp 15 Jahren in denen ich als Entwickler tätig war gibt es wahrscheinlich nur wenige Technologien mit
+    <p>In den knapp 15 Jahren die ich bisher als Entwickler tätig war, gab es wahrscheinlich nur wenige Technologien mit
     denen ich nicht zumindest am Rande schon einmal zu tun hatte. Angefangen habe ich dabei mit reiner HTML-Entwicklung
     (damals wurde noch für den IE5 und Netscape 4.7 optimiert!), ein wenig später kam dann CSS hinzu (was es anfangs
     damals tatsächlich noch nicht gab).</p>
 
     <p>In 1998, im zarten Alter von 14 Jahren, kaufte ich von meinem Taschengeld mein erstes Buch zum Thema
-    <strong>JavaScript</strong> und bin der Sprache bis heute treu geblieben. Zwischen 2004 und 2008 brauchte ich mal
-    etwas Abwechslung und beschäftigte mich dort überwiegend mit Backend-Entwicklung mit PHP und MySQL ehe ich dank
-    HTML 5 wieder fast ausschließlich zur Frontend-Entwicklung zurückkehrte.</p>
+    <strong>JavaScript</strong> und bin der Sprache bis heute treu geblieben. Zwischen 2004 und 2008 benötigte ich dann
+    mal etwas Abwechslung und so beschäftigte ich mich dort überwiegend mit Backend-Entwicklung mit PHP und MySQL ehe ich
+    dank HTML 5 wieder fast ausschließlich zur Frontend-Entwicklung zurückkehrte.</p>
 
-    <p>2009 entschied ich mich dafür, mich wieder stärker auf meinen Ursprung zu besinnen und konzentrierte mich fortan
+    <p>2009 entschied ich mich also dafür, mich wieder stärker auf meinen Ursprung zu besinnen und konzentrierte mich fortan
     wieder auf die Frontend-Entwicklung mit HTML, CSS und JavaScript. Der JavaScript-Anteil wurde mit der Zeit immer
     größer, 2011 kamen erste kleine Projekte mit Node.js dazu, im Laufe der Zeit kamen mehr Projekte mit Node.js hinzu
     und mittlerweile existieren auch einige <a href="https://www.npmjs.com/~manuelbieh">Packages von mir in npm</a>.</p>
 
-    <p>Ich bemühe mich stets die richtigen Tools für die zu lösenden Aufgaben zu verwenden statt wie manch anderer immer
-    die gleichen Tools für sämtliche Art von Problemen zu nutzen. Dadurch habe ich mir im Laufe der Zeit ein ziemlich
+    <p>Ich bemühe mich stets die richtigen Tools für die zu lösenden Aufgaben zu verwenden statt wie manch anderer die
+    immer gleichen Tools für sämtliche Art von Problemen zu nutzen. Dadurch habe ich mir im Laufe der Zeit ein ziemlich
     breites Wissen in ganz unterschiedlichen Technologien angeeignet und arbeite mich für gewöhnlich auch schnell
     in neue Technologien ein.</p>
 
     <p>Aktuell muss ich zugeben, habe ich eine starke Zuneigung für React (+ Ecosystem), Webpack und Node.js entwickelt
     und bemühe mich in der Projekt-Akquise primär um solche Projekte, in denen der Einsatz von React sinnvoll ist.</p>
 
-    <p></p>
+    <p>Die Logos spiegeln einige der Technologien wider mit denen ich in der Vergangenheit gearbeitet habe.</p>

@@ -1,7 +1,16 @@
 <h1>{{legal.title}}</h1>
 
-{{#each legal.content}}
-    <h2>{{headline}}</h2>
-    {{#if subheadline}}<h3>{{subheadline}}</h3>{{/if}}
-    {{{text}}}
-{{/each}}
+<div class="row">
+    <div class="col col-xs-12">
+        {{{legal.info}}}
+        {{#each legal.content}}
+            <h2>{{headline}}</h2>
+            {{#if subheadline}}<h3>{{subheadline}}</h3>{{/if}}
+            {{{text}}}
+            {{#each items}}
+                <h3>{{headline}}</h3>
+                {{{text}}}
+            {{/each}}
+        {{/each}}
+    </div>
+</div>

@@ -15,28 +15,47 @@ articles:
     title: Magazin-Artikel
     items:
         -
-            title: Interview Mobiles Webdesign
+            title: 'Interview: Webdesign-Trends 2012'
+            image: /assets/img/publications/webmakingcover-placeholder.jpg
+        #    description: |
+        #        <p>In der Dezember-Ausgabe des Webmaking Magazins erschien ein Interview mit mir zum Thema
+        #        Webdesign-Trends 2012. Ich beantworte dazu einige Fragen der Redaktion wo die Reise im Jahr 2012
+        #        im Bezug auf Webdesign und -technologie hinführen wird.</p>
+            source: Webmaking Magazin, Ausgabe 12/11
+            link: /de/publications/webdesign-trends-2012.html
+            linktext: Weiterlesen
+
+        -
+            title: 'Interview: Mobiles Webdesign'
             image: /assets/img/publications/internet-intern-0211.jpg
             description: |
-                <p>Für die Ausgabe 2/2011 der Fachzeitschrift Internet Intern wurde ich zum Thema „Mobiles Webdesign“
-                befragt. Dabei geht es vor allem um Aspekte die beim Design und der Konzeption einer mobilen Seite
-                beachtet werden müssen. Aber auch die eigentliche Entwicklung wird kurz angerissen. Abgeschlossen wird
-                das Interview von einer kurzen Checkliste mit Punkten die es bei der mobilen Websiten-Entwicklung zu
-                beachten gibt. Das Interview in voller Länge gibt es online nachzulesen.</p>
+        #        <p>Für die Ausgabe 2/2011 der Fachzeitschrift Internet Intern wurde ich zum Thema „Mobiles Webdesign“
+        #        befragt. Dabei geht es vor allem um Aspekte die beim Design und der Konzeption einer mobilen Seite
+        #        beachtet werden müssen. Aber auch die eigentliche Entwicklung wird kurz angerissen. Abgeschlossen wird
+        #        das Interview von einer kurzen Checkliste mit Punkten die es bei der mobilen Websiten-Entwicklung zu
+        #        beachten gibt. Das Interview in voller Länge gibt es online nachzulesen.</p>
             source: Internet Intern, Ausgabe 02/11.
             link: /de/publications/interview-mobiles-webdesign.html
             linktext: Weiterlesen
 
         -
+            title: Creating Mobile Websites [English]
+            image: /assets/img/publications/devguide9.jpg
+            description:
+            source: "Mobile Developer’s Guide To The Galaxy #9"
+            link: /de/publications/creating-mobile-websites.html
+            linktext: Weiterlesen
+
+        -
             title: Mobile Möglichkeiten – Tools für die Entwicklung mobiler Webseiten
             image: /assets/img/publications/webstandads-magazin-11.jpg
-            description: |
-                <p>Wer heute eine mobile Webseite erstellen möchte, wird vor eine
-                Vielzahl von Entscheidungen gestellt: Kostenlos oder kostenpflichtig?
-                Entwicklung auf Code-Ebene oder per WYSIWYG? Serverseitige
-                oder clientseitige Lösungen? Mittlerweile gibt es eine Menge
-                unterschiedlicher Lösungsansätze, von denen jeder seine eigenen
-                Vor- und Nachteile mit sich bringt.</p>
+        #    description: |
+        #        <p>Wer heute eine mobile Webseite erstellen möchte, wird vor eine
+        #        Vielzahl von Entscheidungen gestellt: Kostenlos oder kostenpflichtig?
+        #        Entwicklung auf Code-Ebene oder per WYSIWYG? Serverseitige
+        #        oder clientseitige Lösungen? Mittlerweile gibt es eine Menge
+        #        unterschiedlicher Lösungsansätze, von denen jeder seine eigenen
+        #        Vor- und Nachteile mit sich bringt.</p>
             source: Webstandards-Magazin, Ausgabe 11/11.
             link: /assets/downloads/034-038_mobile-moeglichkeiten_manuel-bieh.pdf
             linktext: Download [687 KB]

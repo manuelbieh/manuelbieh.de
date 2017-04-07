@@ -1,3 +1,7 @@
+---
+de: technologies.html
+en: technologies.html
+---
 <div class="technologies">
     <h1>{{technologies.title}}</h1>
 
@@ -6,8 +10,10 @@
             {{{technologies.intro}}}
         </div>
         <div class="col col-xs-12 col-lg-6">
-            <img src="{{assets}}/img/technologies.svg" />
-            <small>Some technologies I've worked with. And liked it!</small>
+            {{!-- <img src="{{assets}}/img/technologies.svg" /> --}}
+            {{#each tech-logos.items}}
+                <img src="/assets/img/tech/{{.}}" style="width: 96px;"/>
+            {{/each}}
         </div>
     </div>
 </div>

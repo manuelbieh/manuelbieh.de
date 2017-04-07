@@ -26,3 +26,19 @@
     }
 
 }
+
+article .cover-image {
+
+    float: left;
+    margin: 0 16px 8px 0;
+    width: 100%;
+
+    @include respond-to(sm) {
+        width: 256px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
