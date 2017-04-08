@@ -6,7 +6,8 @@
   "scripts": {
     "develop": "grunt serve",
     "dev": "npm run develop",
-    "build": "grunt build"
+    "build": "grunt build",
+    "release": "cd dist/ && zip -r ../release.zip ."
   },
   "keywords": [],
   "author": "Manuel Bieh <node@manuelbieh.de> (https://github.com/manuelbieh)",
@@ -21,6 +22,7 @@
     "grunt-assemble": "^0.6.3",
     "grunt-assemble-permalinks": "^0.1.1",
     "grunt-cache-bust": "^1.5.1",
+    "grunt-cli": "^1.2.0",
     "grunt-concurrent": "^2.3.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compress": "^1.4.1",
