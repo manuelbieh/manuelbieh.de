@@ -14,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "@manuel-bieh/cv": "^1.0.1",
+    "@wiremore/css-grid": "^1.0.0",
     "assemble": "^0.23.0",
     "autoprefixer": "^6.7.7",
     "cssnano": "^3.10.0",
@@ -35,11 +36,9 @@
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0",
     "helper-moment": "^0.2.0",
+    "imagemin-mozjpeg": "^6.0.0",
     "jit-grunt": "^0.10.0",
     "normalize-scss": "^6.0.0",
     "time-grunt": "^1.4.0"
-  },
-  "dependencies": {
-    "@wiremore/css-grid": "^1.0.0"
   }
 }

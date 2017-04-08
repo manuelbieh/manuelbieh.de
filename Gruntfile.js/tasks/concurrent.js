@@ -1,10 +1,11 @@
 module.exports = function(grunt) {
 
     grunt.config('concurrent', {
-        'dev': [
-            'copy:dev',
+        'prod': [
+            'imagemin:prod',
+            'copy:prod',
             'assemble',
-            'sass:dev'
+            'sass:prod',
         ],
     });
 
