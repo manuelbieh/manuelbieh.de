@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "develop": "grunt serve",
+    "develop": "./node_modules/.bin/grunt serve",
     "dev": "npm run develop",
-    "build": "grunt build",
+    "build": "./node_modules/.bin/grunt build",
     "release": "cd dist/ && zip -r ../release.zip ."
   },
   "keywords": [],
