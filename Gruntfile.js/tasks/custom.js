@@ -12,6 +12,8 @@ module.exports = function(grunt) {
             // 'assemble',
             // 'sass:prod',
             'concurrent:prod',
+            'postcss',
+            'htmlmin',
             'cacheBust:prod',
             'compress'
         ]);

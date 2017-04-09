@@ -2,12 +2,12 @@ module.exports = function(grunt) {
 
     grunt.config('postcss', {
         options: {
-            map: true, // inline sourcemaps
+            map: true,
             processors: [
                 require('autoprefixer')({
                     browsers: 'last 3 versions'
-                }), // add vendor prefixes
-                require('cssnano')() // minify the result
+                }),
+                require('cssnano')()
             ]
         },
         prod: {
