@@ -18,6 +18,10 @@ main {
 }
 // flexbox end
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     overflow-x: hidden;
     line-height: 1.6;

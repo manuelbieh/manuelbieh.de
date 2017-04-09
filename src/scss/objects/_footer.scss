@@ -1,19 +1,32 @@
 footer {
 
-    padding: 16px;
+    background: $color-section-03-bg;
+    padding-bottom: 16px;
+    // padding: 16px;
     vertical-align: middle;
     position: relative;
 
     &:before {
+        // content: "";
+        // background: $color-section-03-bg;
+        // display: block;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // transform: skewY(-1.25deg) translate3d(0, 0, 0) scale(1.25);
+        // bottom: 0;
+
+        // temporary solution to avoid scrollbar
         content: "";
-        background: $color-section-03-bg;
         display: block;
         position: absolute;
-        top: 0;
+        top: -42px;
         left: 0;
         right: 0;
-        transform: skewY(-1.25deg) translate3d(0, 0, 0) scale(1.25);
-        bottom: 0;
+        transform: skewY(-1.25deg) translate3d(0, 0, 0) scale(1);
+        height: 84px;
+        background: #94b6b5;
     }
 
     a {
