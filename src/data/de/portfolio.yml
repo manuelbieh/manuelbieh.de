@@ -1,0 +1,20 @@
+pages:
+    -
+        title: Zur Person
+
+# <section id="page-01">
+#     <div class="deco"><div></div></div>
+#     <h1>Zur Person</h1>
+#     <div class="row">
+#         <div class="w7">
+#             <p>Manuel Bieh, <span class="anonymous">geboren am 11. September 1984,</span> aufgewachsen in der Fußball-Hauptstadt <strong>Dortmund</strong>, mittlerweile wohnhaft in der Bundeshauptstadt <strong>Berlin</strong>.</p>
+#             <p>Wirklich interessant wurde mein Leben wohl im Jahr 2000<span class="anonymous">, mit 16</span>. Dort fing ich als Praktikant, später als Aushilfe und ein Jahr darauf schließlich als Auszubildender zum <strong>Mediengestalter für Digital- und Printmedien</strong> bei einer Dortmunder Agentur für Internetlösungen an. Doch dies sollte noch nicht genug sein und so gesellte sich kurz darauf bereits eine zweijährige berufsbegleitende Fortbildung zum <strong>Medienfachwirt (IHK)</strong> dazu, mit erfolgreichem Abschluss im August 2008.</p>
+#             <p>Während dieser Zeit arbeitete ich als <strong>freier Web-Entwickler</strong> für diverse Agenturen und eigene Kunden, als Fachautor und Gutachter für diverse Magazine, sowie als angestellter Entwickler für Online-Anwendungen bei der raphael GmbH, ehe ich im Mai 2008 die Mobilistics GmbH gründete. Ein Unternehmen, das sich mit der Erstellung und Optimierung von Websites für mobile Endgeräte beschäftigte, bei der ich als technischer Geschäftsführer agierte.</p>
+#             <p>Nach meinem Ausstieg aus der Mobilistics GmbH machte ich weitere interessante Erfahrungen, z.B. als <strong>Software-Entwickler</strong> bei der Sevenval GmbH, einem der größten Technologie-Anbieter für mobiles Internet in Europa, als <strong>IT-Berater</strong> bei der IT-Unternehmensberatung itemis AG und als <strong>technischer Leiter</strong> bei der ubiiqu GmbH, ehe ich mich entschied wieder als <strong>freier Web-Entwickler</strong> tätig zu sein.</p>
+#         </div>
+#         <div class="w5">
+#             <!--<img src="assets/img/portrait-01-144dpi.jpg" class="anonymous" alt="">-->
+#             <img src="assets/img/portrait-04-144dpi.jpg" class="anonymous" alt="">
+#         </div>
+#     </div>
+# </section>

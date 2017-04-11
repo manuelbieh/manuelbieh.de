@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-weight: 400;
+    font-family: Classic Round;
+}
+
+h1, h2, h3, h4, strong {
+    font-family: Classic Round;
+    font-weight: 700;
+}
+
+td, th {
+    vertical-align: top;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 115%;
+    text-align: justify;
+}
+
+blockquote + p {
+    color: #666;
+}
+
+.right {
+    text-align: right;
+}
+
+.deco {
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.deco div {
+    background: $color-primary;
+    height: 100px;
+    position: absolute;
+    left: -5px;
+    top: -45px;
+    transform: rotate(-1deg);
+    width: 200%;
+}
+
+#title h1 {
+    color: black;
+}
+
+.portrait .col1 {
+    width: 42%;
+}
+
+.portrait .col2 {
+    width: 58%;
+}

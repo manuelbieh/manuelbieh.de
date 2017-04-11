@@ -52,6 +52,14 @@ module.exports = function(grunt) {
                         '*.hbs'
                     ],
                     dest: '<%= config.dirs.dist %>/de/publications'
+                },
+                {
+                    expand: true,
+                    cwd: '<%= config.dirs.src %>/pages/portfolio/',
+                    src: [
+                        '*.hbs'
+                    ],
+                    dest: '<%= config.dirs.dist %>/de/portfolio'
                 }
             ],
         },
@@ -75,13 +83,20 @@ module.exports = function(grunt) {
                 },
                 {
                     expand: true,
-                    cwd: '<%= config.dirs.src %>/pages/',
+                    cwd: '<%= config.dirs.src %>/pages/publications/en/',
                     src: [
-                        'publications/en/*.hbs'
+                        '*.hbs'
                     ],
-                    dest: '<%= config.dirs.dist %>/en/'
+                    dest: '<%= config.dirs.dist %>/en/publications'
                 },
-
+                {
+                    expand: true,
+                    cwd: '<%= config.dirs.src %>/pages/portfolio/',
+                    src: [
+                        '*.hbs'
+                    ],
+                    dest: '<%= config.dirs.dist %>/en/portfolio'
+                }
             ],
         }
     });

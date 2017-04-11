@@ -1,0 +1,153 @@
+html {
+    /*workaround for phantomJS2 rendering pages too large*/
+    // zoom: 1.2;
+}
+
+@media print {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        font-size: 7.5pt;
+        height: 100%;
+        line-height: 12.5pt;
+    }
+
+    section {
+        box-sizing: border-box;
+        display: block;
+        page-break-after: always;
+        position: relative;
+        padding-top: 2em;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        margin: 0 0 1em 0;
+    }
+
+    ul, ol, dl {
+        margin: 0 0 1em 1.5em;
+    }
+
+    a {
+        color: #074283;
+    }
+
+    table {
+        border-collapse: collapse;
+        line-height: 11.5pt;
+        margin: 0 0 1em 0;
+        width: 100%;
+    }
+
+    td {
+        padding: 0.2em 0.5em;
+    }
+
+    tr:nth-child(2n) td {
+        background: #f3f3f3;
+    }
+
+    table.styled {
+
+        margin: 0 5%;
+        width: 90%;
+
+        tr {
+            border-bottom: 0.1mm solid #666;
+        }
+
+        td {
+            padding: 0.3cm;
+            background: white;
+        }
+
+        td:first-child {
+            width: 30%;
+        }
+
+    }
+
+    h1 {
+        color: #f5f5f5;
+        font-size: 2.5em;
+        margin: 0 0 1em 0;
+        padding-left: 0.5em;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1:after {
+        /*color: #d9e2ec;*/
+        color: #f5f5f5;
+        content: "Manuel Bieh";
+        font-size: 1.5em;
+        padding: 0 6px 8px 6px;
+        padding: 0;
+        position: absolute;
+        right: 0.5em;
+        top: 0em;
+    }
+
+    h1 small {
+        font-size: 18.5pt;
+    }
+
+    h2 {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    h2:first-child {
+        margin-top: 0;
+    }
+
+    #title {
+        padding-top: 4px;
+        padding-left: 0;
+    }
+
+    #title img {
+        height: 88px;
+    }
+
+    // #title img {
+    //     width: 21cm;
+    //     height: 11cm;
+    //     max-height: auto;
+    //     max-width: auto;
+    // }
+
+    #title h1 {
+        bottom: -0.5em;
+        font-size: 52px;
+        line-height: 16pt;
+        position: absolute;
+        right: 1em;
+        z-index: 1;
+    }
+
+    #title h1:after, #title h1:before {
+        background: transparent;
+        content: "";
+        border: 0;
+        display: none;
+    }
+
+    .tag {
+        color: #d9e2ec;
+        font-size: 36pt;
+        position: absolute;
+        z-index: 0;
+        top: -100px;
+    }
+
+}

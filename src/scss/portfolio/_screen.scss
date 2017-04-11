@@ -1,0 +1,137 @@
+@media screen {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        font-size: 14px;
+        height: 100%;
+        line-height: 19px;
+    }
+
+    section {
+        border: 1px solid #BBB;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px 2px #CCC;
+        display: block;
+        margin: 50px auto;
+        page-break-after: always;
+        position: relative;
+        padding-top: 2em;
+        width: 896px;
+        height: 592px;
+
+    }
+
+    .portrait {
+        section {
+            min-height: 650px;
+            width: 592px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 470px;
+    }
+
+    p {
+        margin: 0 0 1em 0;
+    }
+
+    ul, ol, dl {
+        margin: 0 0 1em 1.5em;
+    }
+
+    a {
+        color: #074283;
+    }
+
+    table {
+        border-collapse: collapse;
+        line-height: 11.5pt;
+        margin: 0 0 1em 0;
+        width: 100%;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    tr:nth-child(2n) td {
+        background: #f3f3f3;
+    }
+
+    h1 {
+        color: #F5F5F5;
+        font-size: 2.5em;
+        margin: 0 0 1em 0;
+        padding-left: 0.5em;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1:after {
+        /*color: #d9e2ec;*/
+        color: #F5F5F5;
+        content: "Manuel Bieh";
+        font-weight: 400;
+        font-size: 1.5em;
+        padding: 0 6px 8px 6px;
+        padding: 0;
+        position: absolute;
+        right: 0.5em;
+        top: 0em;
+    }
+
+    h1 small {
+        font-size: 18.5pt;
+    }
+
+    h2 {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    h2:first-child {
+        margin-top: 0;
+    }
+
+    #title {
+        padding-top: 4px;
+        padding-left: 0;
+    }
+
+    #title img {
+        height: 88px;
+        // max-height: none;
+        // height: 95%;
+        // position: absolute;
+        // left: 0;
+        // top: 2%;
+        // width: 95%;
+    }
+
+    #title h1 {
+        bottom: -6px;
+        font-size: 52px;
+        line-height: 16pt;
+        position: absolute;
+        right: 96px;
+        z-index: 1;
+    }
+
+    #title h1:after, #title h1:before {
+        background: transparent;
+        content: "";
+        border: 0;
+        display: none;
+    }
+
+    .deco div {
+        top: -30px;
+    }
+
+}

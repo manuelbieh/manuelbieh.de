@@ -1,0 +1,26 @@
+@mixin box-sizing($boxmodel: border-box) {
+    -webkit-box-sizing: $boxmodel;
+    -moz-box-sizing: $boxmodel;
+    -ms-box-sizing: $boxmodel;
+    -o-box-sizing: $boxmodel;
+    box-sizing: $boxmodel;
+}
+
+%gridelement {
+    @include box-sizing;
+    float: left;
+    padding: 16px;
+}
+
+@for $i from 1 through 12 {
+
+    .w#{$i} {
+        width: floor(100%/(12/$i)*100)/100;
+        @extend %gridelement;
+    }
+
+}
+
+.row {
+    clear: both;
+}
