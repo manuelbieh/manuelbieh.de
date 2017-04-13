@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "@manuel-bieh/cv": "^1.0.1",
-    "@manuel-bieh/layout": "0.0.0",
+    "@manuel-bieh/layout": "^1.0.0",
     "@wiremore/css-grid": "^1.0.0",
     "assemble": "^0.23.0",
     "autoprefixer": "^6.7.7",
@@ -41,5 +41,8 @@
     "jit-grunt": "^0.10.0",
     "normalize-scss": "^6.0.0",
     "time-grunt": "^1.4.0"
+  },
+  "dependencies": {
+    "handlebars-helper-partial": "^0.2.0"
   }
 }

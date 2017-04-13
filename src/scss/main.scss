@@ -1,16 +1,1 @@
-@import "config/config";
-@import "mixins/mixins";
-
-@import "@wiremore/css-grid/src/grid";
-@import "normalize-scss/sass/normalize";
-@include normalize();
-
-@import "globals";
-@import "objects/header";
-@import "objects/footer";
-
-@import "pages/clients";
-@import "pages/profile";
-@import "pages/publications";
-
-// @import "@manuel-bieh/layout/scss/website";
+@import "@manuel-bieh/layout/scss/website";
