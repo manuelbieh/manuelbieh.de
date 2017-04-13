@@ -1,3 +1,22 @@
+body {
+    line-height: 1.6;
+    font-family: Classic Round;
+    font-size: 18px;
+}
+
+main {
+
+    display: block;
+    padding-top: 48px;
+    padding-bottom: 64px;
+
+    h2 {
+        padding-bottom: 4px;
+        border-bottom: 1px solid $color-secondary;
+    }
+
+}
+
 // flexbox start
 html {
     height: 100%;
@@ -17,30 +36,6 @@ main {
     flex: 1 1 auto;
 }
 // flexbox end
-
-html {
-    overflow-x: hidden;
-}
-
-body {
-    overflow-x: hidden;
-    line-height: 1.6;
-    font-family: Classic Round;
-    font-size: 18px;
-}
-
-main {
-
-    display: block;
-    padding-top: 48px;
-    padding-bottom: 64px;
-
-    h2 {
-        padding-bottom: 4px;
-        border-bottom: 1px solid $color-secondary;
-    }
-
-}
 
 
 h1, h2 {
@@ -79,7 +74,6 @@ img {
 table {
     width: 100%;
     border-collapse: collapse;
-    // border-top: 1px solid $color-grey-82;
 }
 
 tr:nth-child(2n) {
@@ -101,13 +95,6 @@ a {
         color: $color-primary;
     }
 }
-
-// .grid {
-//     padding: 0 12px;
-//     @include respond-to(lg) {
-//         padding: 0 20px;
-//     }
-// }
 
 .section-01 {
     background: $color-section-01-bg;
@@ -154,33 +141,9 @@ a {
     &.tiny {
         width: 96px;
     }
+
 }
 
 .center {
     text-align: center;
-}
-
-.content {
-
-    @extend %clearfix;
-
-    &.xs-image-left {
-        img {
-            float: left;
-            margin-right: 8px;
-        }
-    }
-
-    &.xs-image-right {
-        img {
-            float: right;
-            margin-left: 8px;
-        }
-    }
-
-    &.xs-image-left img,
-    &.xs-image-right img {
-        margin-bottom: 8px;
-    }
-
 }

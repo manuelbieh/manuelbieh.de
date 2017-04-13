@@ -26,6 +26,7 @@ module.exports = function(grunt) {
 
             files: [
                 '<%= config.dirs.src %>/**/*.{scss,css}',
+                'node_modules/@manuel-bieh/layout/scss/**/*.scss'
             ],
 
             tasks: [

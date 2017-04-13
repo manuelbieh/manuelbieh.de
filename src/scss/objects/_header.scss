@@ -1,5 +1,17 @@
 header {
 
+    @at-root {
+
+        html {
+            overflow-x: hidden;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+    }
+
     color: $color-section-04-fg;
     padding: 12px 0;
     position: relative;
@@ -70,13 +82,6 @@ header {
             text-decoration: underline;
         }
 
-    }
-
-    .portrait {
-        background: url(/assets/img/manuel-portrait-01.jpg) no-repeat center;
-        background-size: contain;
-        width: 200px;
-        height: 300px;
     }
 
 }
