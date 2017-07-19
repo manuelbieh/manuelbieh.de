@@ -61,6 +61,11 @@
             "url":"http://www.rp-online.de/"
         },
         {
+            "name": "TomTom Telematics",
+            "image": "/assets/img/customers/tomtom.svg",
+            "url":"https://telematics.tomtom.com/de_de/webfleet/products/webfleet/"
+        },
+        {
             "name": "Sevenval Technologies GmbH",
             "image": "/assets/img/customers/sevenval.svg",
             "url":"https://www.sevenval.com/"
