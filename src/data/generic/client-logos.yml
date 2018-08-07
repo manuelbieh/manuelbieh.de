@@ -1,0 +1,89 @@
+items:
+    -
+        name: Aperto
+        image:  /assets/img/customers/aperto.svg
+        url: https://www.aperto.de/
+    -
+        name:  Rossmann
+        image:  /assets/img/customers/rossmann.svg
+        url: https://www.rossmann.de/
+    -
+        name:  Migros
+        image:  /assets/img/customers/migros.svg
+        url: https://www.migros.ch/
+    -
+        name:  C3 – Creative Code and Content
+        image:  /assets/img/customers/c3.svg
+        url: https://www.c3.co/
+    -
+        name:  Porsche Digital Lab Berlin
+        image:  /assets/img/customers/porsche.svg
+        url: https://www.porsche.com/germany/aboutporsche/service/porschedigitallab/
+    -
+        name:  Handelsblatt
+        image:  /assets/img/customers/handelsblatt.svg
+        url: http://www.handelsblatt.com/
+    -
+        name:  Wirtschaftswoche
+        image:  /assets/img/customers/wiwo.svg
+        url: http://www.wiwo.de/
+    -
+        name:  Klarna AB
+        image:  /assets/img/customers/klarna.svg
+        url: https://www.klarna.com/
+    -
+        name:  Fotocommunity.de
+        image:  /assets/img/customers/fotocommunity.svg
+        url: https://www.fotocommunity.de/
+    # -
+    #     name:  itemis AG
+    #     image:  /assets/img/customers/itemis.svg
+    #     url: https://www.itemis.de/
+    -
+        name:  Publicis Pixelpark
+        image:  /assets/img/customers/pixelpark.svg
+        url: https://www.pixelpark.com/
+    -
+        name:  Doc Morris
+        image:  /assets/img/customers/docmorris.svg
+        url: https://www.docmorris.de/
+    -
+        name:  ProSiebenSat1 Digital
+        image:  /assets/img/customers/pro7sat1digital.svg
+        url: https://www.prosiebensat1digital.de/
+    -
+        name:  Rheinische Post Online
+        image:  /assets/img/customers/rheinischepost.svg
+        url: http://www.rp-online.de/
+    -
+        name: TomTom Telematics
+        image: /assets/img/customers/tomtom.svg
+        url: https://telematics.tomtom.com/de_de/webfleet/products/webfleet/
+    -
+        name:  Sevenval Technologies GmbH
+        image:  /assets/img/customers/sevenval.svg
+        url: https://www.sevenval.com/
+    -
+        name:  Adidas Predator
+        image:  /assets/img/customers/adidas.svg
+        url: https://www.adidas.de/
+    -
+        name: Service Partner ONE
+        image: /assets/img/customers/servicepartnerone.svg
+        url: https://www.servicepartnerone.de/
+    # -
+    #     name:  Amakuria
+    #     image:  /assets/img/customers/amakuria.svg
+    #     url: https://www.amakuria.de/
+    -
+        name:  Candis GmbH
+        image:  /assets/img/customers/candis.svg
+        url: https://www.candis.io/
+    -
+        name:  Zeotap GmbH
+        image:  /assets/img/customers/zeotap.svg
+        url: https://www.zeotap.com/
+    -
+        name:  Zalando
+        image:  /assets/img/customers/zalando.svg
+        url: https://www.zalando.de/
