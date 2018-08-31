@@ -1,0 +1,21 @@
+{
+    "test": "Good day",
+    "meta": {
+        "title": "ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js"
+    },
+    "page": {
+        "title": "ManuelBieh.de",
+        "subhead": "Freelance Developer.",
+        "subhead2": "JavaScript. React. Node.js"
+    },
+    "footer": {
+        "legal": "Legal",
+        "contact": "Contact"
+    },
+    "navigation": {
+        "home": "Home",
+        "profile": "Profile",
+        "clients": "Clients",
+        "technology": "Technology"
+    }
+}
