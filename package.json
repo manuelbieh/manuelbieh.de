@@ -1,49 +1,49 @@
 {
-  "name": "manuelbieh.de",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "npm run develop",
-    "develop": "./node_modules/.bin/grunt serve",
-    "dev": "npm run develop",
-    "build": "./node_modules/.bin/grunt build",
-    "release": "cd dist/ && zip -r ../release.zip ."
-  },
-  "keywords": [],
-  "author": "Manuel Bieh <node@manuelbieh.de> (https://github.com/manuelbieh)",
-  "license": "MIT",
-  "devDependencies": {
-    "@manuel-bieh/cv": "^1.0.1",
-    "@manuel-bieh/layout": "^1.0.0",
-    "@wiremore/css-grid": "^1.0.0",
-    "assemble": "^0.23.0",
-    "autoprefixer": "^6.7.7",
-    "cssnano": "^3.10.0",
-    "eslint-config-wiremore": "^1.0.3",
-    "grunt": "^1.0.1",
-    "grunt-assemble": "^0.6.3",
-    "grunt-assemble-permalinks": "^0.1.1",
-    "grunt-cache-bust": "^1.5.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-concurrent": "^2.3.1",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-compress": "^1.4.1",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-htmlmin": "^2.3.0",
-    "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-newer": "^1.2.0",
-    "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^2.0.0",
-    "helper-moment": "^0.2.0",
-    "imagemin-mozjpeg": "^6.0.0",
-    "jit-grunt": "^0.10.0",
-    "normalize-scss": "^6.0.0",
-    "time-grunt": "^1.4.0"
-  },
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "handlebars-helper-partial": "^0.2.0"
+    "browser-lang": "^0.0.1",
+    "classnames": "^2.2.6",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-wiremore": "^2.1.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-security": "^1.4.0",
+    "gatsby": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-replace-path": "^1.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/preset-flow": "^7.0.0",
+    "flow-bin": "^0.79.1",
+    "i18next": "^11.6.0",
+    "i18next-browser-languagedetector": "^2.2.3",
+    "i18next-xhr-backend": "^1.5.1",
+    "prettier": "^1.14.2",
+    "react-i18next": "^7.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
