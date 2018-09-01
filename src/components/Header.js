@@ -17,61 +17,67 @@ const routes = {
     home: '/',
     profile: '/profile',
     clients: '/clients',
-    technology: '/technology',
+    technologies: '/technologies',
     publications: '/publications',
 };
 
 const NavItems = {
-    de: ['home', 'profile', 'clients', 'technology', 'publications'],
-    en: ['home', 'profile', 'clients', 'technology'],
+    de: ['home', 'profile', 'clients', 'technologies', 'publications'],
+    en: ['home', 'profile', 'clients', 'technologies'],
 };
 
-const Header = ({ t, language, pageContext: { originalPath } }: PropsT) => (
-    <header>
-        <div className="grid">
-            <div className="row">
-                <div className="col col-xs-12">
-                    <hgroup>
-                        <h1>
-                            <Link to="/">{t('page.title')}</Link>
-                        </h1>
-                        <h2>
-                            {t('page.subhead')}
-                            <br />
-                            {t('page.subhead2')}
-                        </h2>
-                    </hgroup>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col col-xs-12">
-                    <nav>
-                        <ul>
-                            <li style={{ float: 'right' }}>
-                                {Object.entries(languages).map(
-                                    ([code, label]) =>
-                                        code === language ? (
-                                            <span key={code}>{label}</span>
-                                        ) : (
-                                            <GatsbyLink key={code} to={`${code}${originalPath}`}>
-                                                {label}
-                                            </GatsbyLink>
-                                        )
-                                )}
-                            </li>
-                            <li>
-                                {NavItems[language].map((item) => (
-                                    <Link key={item} to={routes[item]}>
-                                        {t(`navigation.${item}`)}
-                                    </Link>
-                                ))}
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-);
+console.log('NI', NavItems);
 
-export default withIntl(withContext(Header));
+const Header = ({ t, language, pageContext: { originalPath } }: PropsT) =>
+    console.log({ originalPath, language }) || (
+        <header>
+            <div className="grid">
+                <div className="row">
+                    <div className="col col-xs-12">
+                        <hgroup>
+                            <h1>
+                                <Link to="/">{t('page.title')}</Link>
+                            </h1>
+                            <h2>
+                                {t('page.subhead')}
+                                <br />
+                                {t('page.subhead2')}
+                            </h2>
+                        </hgroup>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col col-xs-12">
+                        <nav>
+                            <ul>
+                                <li style={{ float: 'right' }}>
+                                    {Object.entries(languages).map(
+                                        ([code, label]) =>
+                                            code === language ? (
+                                                <span key={code}>{label}</span>
+                                            ) : (
+                                                <GatsbyLink
+                                                    key={code}
+                                                    to={`${code}${originalPath || ''}`}
+                                                >
+                                                    {label}
+                                                </GatsbyLink>
+                                            )
+                                    )}
+                                </li>
+                                <li>
+                                    {NavItems[language].map((item) => (
+                                        <Link key={item} to={routes[item]}>
+                                            {t(`navigation.${item}`)}
+                                        </Link>
+                                    ))}
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    );
+
+export default withContext(withIntl(Header));

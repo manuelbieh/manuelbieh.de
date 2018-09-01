@@ -1,14 +1,20 @@
+// @flow
 import React from 'react';
-import { Link, withIntl } from '../i18n';
-import { PageContext } from '../components/PageContext';
+import { withIntl } from '../i18n';
+import { setContext } from '../components/PageContext';
 import Layout from '../components/Layout';
 
-const Profile = (props) => {
-    return (
-        <PageContext.Provider value={props}>
-            <Layout>Profile</Layout>
-        </PageContext.Provider>
-    );
+type PropsT = {
+    t: (string) => string | string[],
 };
 
-export default withIntl(Profile);
+const Profile = ({ t }: PropsT) => (
+    <Layout>
+        <h1>{t('profile.title')}</h1>
+        {(t('profile.intro') || []).map((text) => (
+            <p key={text} dangerouslySetInnerHTML={{ __html: text }} />
+        ))}
+    </Layout>
+);
+
+export default setContext(withIntl(Profile));
