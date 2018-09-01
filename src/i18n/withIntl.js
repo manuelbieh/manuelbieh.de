@@ -15,9 +15,9 @@ i18next.init({
     // have a common namespace used around the full app
     ns: ['translations'],
     defaultNS: 'translations',
-
+    returnObjects: true,
     debug: true,
-
+    parseMissingKeyHandler: () => null,
     interpolation: {
         escapeValue: false, // not needed for react!!
     },
@@ -31,9 +31,15 @@ export default (WrappedComponent) => {
     WrappedComponent = translate()(WrappedComponent);
     class withIntl extends Component {
         render() {
-            const { locale } = this.props.pageContext || 'en';
-            i18next.changeLanguage(locale);
-            console.log('LOCALE:', locale);
+            const { pageContext } = this.props;
+
+            if (pageContext) {
+                const { locale } = pageContext;
+                if (locale && locale !== i18next.language) {
+                    i18next.changeLanguage(locale);
+                }
+            }
+
             return (
                 <I18nextProvider i18n={i18next}>
                     <WrappedComponent {...this.props} language={i18next.language} />
