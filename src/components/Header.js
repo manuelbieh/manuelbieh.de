@@ -65,13 +65,11 @@ const Header = ({ t, language, pageContext: { originalPath } }: PropsT) =>
                                             )
                                     )}
                                 </li>
-                                <li>
-                                    {NavItems[language].map((item) => (
-                                        <Link key={item} to={routes[item]}>
-                                            {t(`navigation.${item}`)}
-                                        </Link>
-                                    ))}
-                                </li>
+                                {NavItems[language].map((item) => (
+                                    <li key={item}>
+                                        <Link to={routes[item]}>{t(`navigation.${item}`)}</Link>
+                                    </li>
+                                ))}
                             </ul>
                         </nav>
                     </div>
