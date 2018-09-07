@@ -25,7 +25,7 @@ exports.onCreatePage = ({ page, actions }) => {
             context: {
                 languages,
                 locale: '',
-                routed: true,
+                routed: false,
                 redirectPage: page.path,
             },
         };
