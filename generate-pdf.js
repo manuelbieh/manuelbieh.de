@@ -1,3 +1,4 @@
+/* global WebPage, phantom */
 // html2pdf.js
 const page = new WebPage();
 const system = require('system');
@@ -27,7 +28,7 @@ page.paperSize = {
 // };
 page.zoomFactor = 1;
 
-page.open(system.args[1], function (status) {
+page.open(system.args[1], (status) => {
     /*
     page.injectJs('assets/js/fontface.js');
     setTimeout(function() {

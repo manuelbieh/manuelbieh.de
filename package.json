@@ -44,6 +44,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
-    "handlebars-helper-partial": "^0.2.0"
+    "handlebars-helper-partial": "^0.2.0",
+    "prettier": "^1.14.2"
   }
 }
