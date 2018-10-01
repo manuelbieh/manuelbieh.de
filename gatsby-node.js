@@ -1,6 +1,12 @@
 const path = require('path');
 
-// const { languages } = require('./src/i18n');
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+    actions.setWebpackConfig({
+        resolve: {
+            modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+        },
+    });
+};
 
 // workaround because gatsby seems to have issues with using ES module imports
 // and mixing oc CJS and ES does not work
