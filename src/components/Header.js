@@ -3,6 +3,7 @@ import React from 'react';
 import { withContext } from './PageContext';
 import { Link as GatsbyLink } from 'gatsby';
 import { Link, languages, withIntl } from '../i18n';
+import { Grid, Row, Column, Header } from '@manuel-bieh/ui/es';
 
 type PropsT = {
     t: (string) => string,
@@ -26,14 +27,12 @@ const NavItems = {
     en: ['home', 'profile', 'clients', 'technologies'],
 };
 
-console.log('NI', NavItems);
-
-const Header = ({ t, language, pageContext: { originalPath } }: PropsT) =>
+const PageHeader = ({ t, language, pageContext: { originalPath } }: PropsT) =>
     console.log({ originalPath, language }) || (
-        <header>
-            <div className="grid">
-                <div className="row">
-                    <div className="col col-xs-12">
+        <Header>
+            <Grid centered>
+                <Row>
+                    <Column xs={12}>
                         <hgroup>
                             <h1>
                                 <Link to="/">{t('page.title')}</Link>
@@ -44,10 +43,10 @@ const Header = ({ t, language, pageContext: { originalPath } }: PropsT) =>
                                 {t('page.subhead2')}
                             </h2>
                         </hgroup>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col col-xs-12">
+                    </Column>
+                </Row>
+                <Row>
+                    <Column xs={12}>
                         <nav>
                             <ul>
                                 <li style={{ float: 'right' }}>
@@ -72,10 +71,10 @@ const Header = ({ t, language, pageContext: { originalPath } }: PropsT) =>
                                 ))}
                             </ul>
                         </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
+                    </Column>
+                </Row>
+            </Grid>
+        </Header>
     );
 
-export default withContext(withIntl(Header));
+export default withContext(withIntl(PageHeader));

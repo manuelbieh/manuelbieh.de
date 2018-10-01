@@ -4,6 +4,7 @@ import { withIntl } from '../i18n';
 import { setContext } from '../components/PageContext';
 import Layout from '../components/Layout';
 import techLogos from '../data/techLogos';
+import { SocialMediaIcons } from '@manuel-bieh/ui/es';
 
 type PropsT = {
     t: (string) => string | string[],
@@ -14,6 +15,7 @@ const Technologies = ({ t }: PropsT) => (
         <div className="technologies">
             <h1>{t('technologies.title')}</h1>
             <div className="row">
+                <SocialMediaIcons />
                 <div className="col col-xs-12 col-lg-6">
                     {t('technologies.intro').map((text) => (
                         <p key={text} dangerouslySetInnerHTML={{ __html: text }} />

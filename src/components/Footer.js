@@ -1,5 +1,6 @@
 import React from 'react';
 import { withIntl, Link } from '../i18n';
+import { Footer } from '@manuel-bieh/ui/es';
 
 const social = {
     github: {
@@ -32,8 +33,8 @@ const social = {
     },
 };
 
-const Footer = ({ t }) => (
-    <footer>
+const PageFooter = ({ t }) => (
+    <Footer>
         <div className="container">
             <div className="grid">
                 <div className="row">
@@ -55,7 +56,7 @@ const Footer = ({ t }) => (
                 </div>
             </div>
         </div>
-    </footer>
+    </Footer>
 );
 
-export default withIntl(Footer);
+export default withIntl(PageFooter);
