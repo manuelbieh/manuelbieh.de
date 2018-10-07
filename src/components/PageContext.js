@@ -8,7 +8,9 @@ const getDisplayName = (WrappedComponent) => {
 export const PageContext = React.createContext({
     t: () => null,
     language: 'en',
-    pageContext: {},
+    pageContext: {
+        originalPath: '',
+    },
 });
 
 export const withContext = (WrappedComponent) => {
