@@ -1,10 +1,11 @@
 {
     "test": "Guten Tag",
     "meta": {
-        "title": "ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js"
+        "title": "ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js",
+        "titleTemplate": "%s – ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js"
     },
     "page": {
-        "title": "ManuelBieh.de",
+        "title": "Manuel Bieh",
         "subhead": "Freelance Developer.",
         "subhead2": "JavaScript. React. Node.js"
     },

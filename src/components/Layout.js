@@ -9,7 +9,7 @@ import './Layout.css';
 
 const Layout = ({ t, children }) => (
     <>
-        <Helmet title={t('meta.title')}>
+        <Helmet title={t('meta.title')} titleTemplate={t('meta.titleTemplate')}>
             <html lang="en" />
         </Helmet>
         <Header />

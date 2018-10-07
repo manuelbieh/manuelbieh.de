@@ -1,7 +1,8 @@
 {
     "test": "Good day",
     "meta": {
-        "title": "ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js"
+        "title": "ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js",
+        "titleTemplate": "%s – ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js"
     },
     "page": {
         "title": "ManuelBieh.de",
@@ -17,6 +18,23 @@
         "profile": "Profile",
         "clients": "Clients",
         "technologies": "Technologies"
+    },
+    "home": {
+        "title": "Hallo!",
+        "text": [
+            "Mein Name ist <strong>Manuel Bieh</strong> und ich lebe und arbeite in <strong>Berlin</strong> als <strong>Freelance Web-Entwickler und Berater</strong> mit den Schwerpunkten <strong>Frontend</strong> und <strong>JavaScript</strong>, insbesondere <strong>React</strong> und <strong>Node.js</strong>.",
+            "Ich bin tätig für die weltbesten Kunden, nutze dabei (meistens) die angesagtesten Technologien und veröffentlichte in der Vergangenheit bereits den einen oder anderen kurzen (und manchmal auch langen) Text.",
+            "Bei spannenden Projekten kann man mich immer gern anfragen, ich unterstütze Sie dabei u.A. bei den folgenden Themen:"
+        ],
+        "services": [
+            "JavaScript-/Frontend Entwicklung",
+            "Konzeption von Frontend-Architektur",
+            "Setup und Optimierung von Entwicklungsprozessen",
+            "Interim CTO"
+        ],
+        "outro": [
+            "Für Projekte die regelmäßige Anwesenheit vor Ort erfordern bin ich derzeit nur in Berlin verfügbar!"
+        ]
     },
     "profile": {
         "title": "Profil",
