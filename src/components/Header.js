@@ -35,12 +35,12 @@ const PageHeader = ({ t, language, pageContext: { originalPath } }: PropsT) => (
                 <Column xs={12}>
                     <hgroup>
                         <h1>
-                            <Link to="/">{t('page.title')}</Link>
+                            <Link to="/">{t('header.title')}</Link>
                         </h1>
                         <h2>
-                            {t('page.subhead')}
+                            {t('header.subhead')}
                             <br />
-                            {t('page.subhead2')}
+                            {t('header.subhead2')}
                         </h2>
                     </hgroup>
                 </Column>
@@ -56,7 +56,7 @@ const PageHeader = ({ t, language, pageContext: { originalPath } }: PropsT) => (
                                             <span key={code}>{label}</span>
                                         ) : (
                                             <GatsbyLink
-                                                activeClassName="activeeeeeee"
+                                                activeClassName={css.active}
                                                 key={code}
                                                 to={`${code}${originalPath || ''}`}
                                             >
@@ -67,7 +67,9 @@ const PageHeader = ({ t, language, pageContext: { originalPath } }: PropsT) => (
                             </li>
                             {NavItems[language].map((item) => (
                                 <li key={item}>
-                                    <Link to={routes[item]}>{t(`navigation.${item}`)}</Link>
+                                    <Link to={routes[item]} activeClassName={css.active}>
+                                        {t(`navigation.${item}`)}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

@@ -14,7 +14,7 @@ const PageFooter = ({ t }: PropsT) => (
                 <Column xs={12} textAlign="center">
                     <p>
                         © 2001-
-                        <span id="footer--year">{new Date().getFullYear()}</span> Manuel Bieh –
+                        <span id="footer--year">{new Date().getFullYear()}</span> Manuel Bieh –{' '}
                         <Link to="/legal.html">{t('footer.legal')}</Link> |{' '}
                         <Link to="/contact.html">{t('footer.contact')}</Link>
                     </p>

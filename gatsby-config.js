@@ -3,6 +3,7 @@ module.exports = {
         title: 'ManuelBieh.de',
     },
     plugins: [
+        // 'gatsby-plugin-remove-trailing-slashes',
         'gatsby-plugin-react-helmet',
         {
             resolve: `gatsby-plugin-manifest`,

@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { Column } from '@manuel-bieh/ui/es';
+import { ClientLogos, Column } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
 import { setContext } from '../components/PageContext';
 import clientLogos from '../data/clientLogos';
@@ -17,12 +17,13 @@ const Clients = ({ t, ...context }: PropsT) => (
                 <p key={text} dangerouslySetInnerHTML={{ __html: text }} />
             ))}
             <section className="client-logos">
-                {clientLogos.map((client) => (
+                <ClientLogos />
+                {/* {clientLogos.map((client) => (
                     <img
                         key={client.name}
                         src={require(`../../assets/img/clients/${client.image}`)}
                     />
-                ))}
+                ))} */}
             </section>
             <p>
                 <small>{t('clients.note')}</small>
