@@ -1,10 +1,10 @@
 {
     "test": "Guten Tag",
     "meta": {
-        "title": "ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js",
-        "titleTemplate": "%s – ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js"
+        "title": "Manuel Bieh – Freelance Developer. JavaScript. React. Node.js",
+        "titleTemplate": "%s – Manuel Bieh – Freelance Developer. JavaScript. React. Node.js"
     },
-    "page": {
+    "header": {
         "title": "Manuel Bieh",
         "subhead": "Freelance Developer.",
         "subhead2": "JavaScript. React. Node.js"
@@ -24,17 +24,15 @@
         "title": "Hallo!",
         "text": [
             "Mein Name ist <strong>Manuel Bieh</strong> und ich lebe und arbeite in <strong>Berlin</strong> als <strong>Freelance Web-Entwickler und Berater</strong> mit den Schwerpunkten <strong>Frontend</strong> und <strong>JavaScript</strong>, insbesondere <strong>React</strong> und <strong>Node.js</strong>.",
-            "Ich bin tätig für die weltbesten Kunden, nutze dabei (meistens) die angesagtesten Technologien und veröffentlichte in der Vergangenheit bereits den einen oder anderen kurzen (und manchmal auch langen) Text.",
-            "Bei spannenden Projekten kann man mich immer gern anfragen, ich unterstütze Sie dabei u.A. bei den folgenden Themen:"
+            "Ich bin tätig für die <1>weltbesten Kunden</1>, nutze dabei (meistens) die <3>angesagtesten Technologien</3> und veröffentlichte in der Vergangenheit bereits den einen oder anderen kurzen (und manchmal auch langen) <5>Text</5>.",
+            "Bei spannenden Projekten kann man mich immer gern anfragen, ich unterstütze Sie dabei u.A. bei den folgenden Themen:",
+            "Für Projekte die regelmäßige Anwesenheit vor Ort erfordern bin ich derzeit nur in Berlin verfügbar!"
         ],
         "services": [
             "JavaScript-/Frontend Entwicklung",
             "Konzeption von Frontend-Architektur",
             "Setup und Optimierung von Entwicklungsprozessen",
             "Interim CTO"
-        ],
-        "outro": [
-            "Für Projekte die regelmäßige Anwesenheit vor Ort erfordern bin ich derzeit nur in Berlin verfügbar!"
         ]
     },
     "profile": {
@@ -65,5 +63,8 @@
             "Aktuell muss ich zugeben, habe ich eine starke Zuneigung für React (+ Ecosystem), Webpack und Node.js entwickelt und bemühe mich in der Projekt-Akquise primär um solche Projekte, in denen der Einsatz von React sinnvoll ist.",
             "Die Logos spiegeln einige der Technologien wider mit denen ich in der Vergangenheit gearbeitet habe."
         ]
+    },
+    "publications": {
+        "title": "Veröffentlichungen"
     }
 }

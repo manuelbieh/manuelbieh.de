@@ -1,6 +1,9 @@
 const path = require('path');
 
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
+// this is copied from gatsby-plugin-remove-trailing-slashes because it causes the build to fail if it is used direcly
+const replacePath = (_path) => (_path === '/' ? _path : _path.replace(/\/$/, ''));
+
+exports.onCreateWebpackConfig = ({ actions }) => {
     actions.setWebpackConfig({
         resolve: {
             modules: [path.resolve(__dirname, 'src'), 'node_modules'],
@@ -22,6 +25,9 @@ exports.onCreatePage = ({ page, actions }) => {
         return Promise.resolve();
     }
 
+    const oldPage = Object.assign({}, page);
+    page.path = replacePath(page.path);
+
     return new Promise((resolve) => {
         const redirect = path.resolve('./src/i18n/Redirect.js');
         const redirectPage = {
@@ -36,7 +42,9 @@ exports.onCreatePage = ({ page, actions }) => {
             },
         };
         createPage(redirectPage);
-        deletePage(page);
+        if (page.path !== oldPage.path) {
+            deletePage(oldPage);
+        }
 
         Object.keys(languages).forEach((locale) => {
             const localePage = {

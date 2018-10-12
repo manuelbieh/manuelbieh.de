@@ -42,7 +42,7 @@
         text-decoration: none;
     }
 
-    nav li.active a,
+    nav li a.active,
     nav li a:hover {
         color: #94b6b5;
     }

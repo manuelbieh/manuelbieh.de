@@ -1,7 +1,10 @@
+// @flow
 import React, { PureComponent } from 'react';
 import { withPrefix } from 'gatsby-link';
 import browserLang from 'browser-lang';
 import { languages } from './index';
+
+type PropsT = {};
 
 class Redirect extends PureComponent {
     constructor(props) {
