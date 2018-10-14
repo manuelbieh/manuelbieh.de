@@ -7,10 +7,10 @@ import Header from './Header';
 import Footer from './Footer';
 import './Layout.css';
 
-const Layout = ({ t, children }) => (
+const Layout = ({ t, i18n, children }) => (
     <>
         <Helmet title={t('meta.title')} titleTemplate={t('meta.titleTemplate')}>
-            <html lang="en" />
+            <html lang={i18n.language} />
         </Helmet>
         <Header />
         <Grid centered>
@@ -28,4 +28,4 @@ Layout.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export default withIntl(Layout);
+export default withIntl()(Layout);

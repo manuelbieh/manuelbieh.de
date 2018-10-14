@@ -435,4 +435,4 @@ const Article = () => (
     </Layout>
 );
 
-export default setContext(withIntl(Article));
+export default setContext(withIntl()(Article));

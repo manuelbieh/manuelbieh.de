@@ -94,4 +94,4 @@ const Publications = ({ t, ...context }: PropsT) => (
     </PageWrapper>
 );
 
-export default setContext(withIntl(Publications));
+export default setContext(withIntl()(Publications));

@@ -1,34 +1,9 @@
 import React, { Component } from 'react';
-import i18next from 'i18next';
+import i18next from './config';
 import { I18nextProvider, translate } from 'react-i18next';
 
-i18next.init({
-    fallbackLng: 'en',
-    resources: {
-        de: {
-            translations: require('./locales/de/translations.json'),
-        },
-        en: {
-            translations: require('./locales/en/translations.json'),
-        },
-    },
-    // have a common namespace used around the full app
-    ns: ['translations'],
-    defaultNS: 'translations',
-    returnObjects: true,
-    debug: true,
-    parseMissingKeyHandler: () => null,
-    interpolation: {
-        escapeValue: false, // not needed for react!!
-    },
-
-    react: {
-        wait: true,
-    },
-});
-
-export default (WrappedComponent) => {
-    WrappedComponent = translate()(WrappedComponent);
+export default (ns = 'translations') => (WrappedComponent) => {
+    WrappedComponent = translate(ns)(WrappedComponent);
     class withIntl extends Component {
         render() {
             const { pageContext } = this.props;

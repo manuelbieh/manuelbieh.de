@@ -1,5 +1,8 @@
 {
     "test": "Good day",
+    "time": {
+        "since": "since"
+    },
     "meta": {
         "title": "ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js",
         "titleTemplate": "%s – ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js"
@@ -22,7 +25,7 @@
     "home": {
         "title": "Hallo!",
         "text": [
-            "Mein Name ist <strong>Manuel Bieh</strong> und ich lebe und arbeite in <strong>Berlin</strong> als <strong>Freelance Web-Entwickler und Berater</strong> mit den Schwerpunkten <strong>Frontend</strong> und <strong>JavaScript</strong>, insbesondere <strong>React</strong> und <strong>Node.js</strong>.",
+            "My name is <strong>Manuel Bieh</strong> und ich lebe und arbeite in <strong>Berlin</strong> als <strong>Freelance Web-Entwickler und Berater</strong> mit den Schwerpunkten <strong>Frontend</strong> und <strong>JavaScript</strong>, insbesondere <strong>React</strong> und <strong>Node.js</strong>.",
             "Ich bin tätig für die <1>weltbesten Kunden</1>, nutze dabei (meistens) die <3>angesagtesten Technologien</3> und veröffentlichte in der Vergangenheit bereits den einen oder anderen kurzen (und manchmal auch langen) <5>Text</5>.",
             "Bei spannenden Projekten kann man mich immer gern anfragen, ich unterstütze Sie dabei u.A. bei den folgenden Themen:",
             "Für Projekte die regelmäßige Anwesenheit vor Ort erfordern bin ich derzeit nur in Berlin verfügbar!"
@@ -41,7 +44,26 @@
             "Wirklich interessant wurde mein Leben wohl im Jahr 2000. Dort fing ich als Praktikant, später als Aushilfe und ein Jahr darauf schließlich als Auszubildender zum <strong>Mediengestalter für Digital- und Printmedien</strong> bei einer Dortmunder Agentur für Internetlösungen an. Doch dies sollte noch nicht genug sein und so gesellte sich kurz darauf bereits eine zweijährige berufsbegleitende Fortbildung zum <strong>Medienfachwirt (IHK)</strong> dazu, mit erfolgreichem Abschluss im August 2008.",
             "Während dieser Zeit arbeitete ich als <strong>freier Web-Entwickler</strong> für diverse Agenturen und eigene Kunden, als Fachautor und Gutachter für diverse Magazine, sowie als angestellter Entwickler für Online-Anwendungen bei der raphael GmbH, ehe ich im Mai 2008 die Mobilistics GmbH gründete. Ein Unternehmen, das sich als deutschlandweit eins der ersten mit der Erstellung und Optimierung von Websites für mobile Endgeräte beschäftigte, bei dem ich als technischer Geschäftsführer agierte. Während dieser Zeit veröffentlichte ich außerdem das erste deutschsprachige Buch zum Thema „Mobiles Webdesign“ beim Galileo Computing Verlag (heute Rheinwerk Verlag).",
             "Nach meinem Ausstieg aus der Mobilistics GmbH machte ich weitere interessante Erfahrungen als <strong>Software-Entwickler</strong> bei der Sevenval GmbH, einem der größten Technologie-Anbieter für mobiles Internet in Europa, als <strong>IT-Berater</strong> bei der IT-Unternehmensberatung itemis AG und als <strong>technischer Leiter</strong> bei der ubiiqu GmbH, ehe ich mich entschied wieder als <strong>freier Entwickler und Berater</strong> tätig zu sein. Eine Tätigkeit die mir immer schon viel Spaß bereitet hat und die ich bis heute mit großer Leidenschaft ausübe."
-        ]
+        ],
+        "sections": {
+            "work": {
+                "headline": "Professional Practice"
+            },
+            "education": {
+                "headline": "Training/Education"
+            },
+            "qualifications": {
+                "headline": "Qualifikations/Degrees"
+            },
+            "skills": {
+                "headline": "Expert knowledge",
+                "proficient": "Excellent skills",
+                "intermediate": "Good knowledge",
+                "basic": "Basic knowledge",
+                "technical": "Technical",
+                "economical": "Economical"
+            }
+        }
     },
     "clients": {
         "title": "Kunden",

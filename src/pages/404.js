@@ -12,4 +12,4 @@ const NotFoundPage = (props) => (
     </PageContext.Provider>
 );
 
-export default withIntl(NotFoundPage);
+export default withIntl()(NotFoundPage);
