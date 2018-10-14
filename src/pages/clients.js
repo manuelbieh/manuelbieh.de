@@ -1,9 +1,8 @@
 // @flow
 import React from 'react';
-import { ClientLogos, Column } from '@manuel-bieh/ui/es';
+import { ClientLogos, Column, Row } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
 import { setContext } from '../components/PageContext';
-import clientLogos from '../data/clientLogos';
 import PageWrapper from '../components/PageWrapper';
 
 type PropsT = {
@@ -12,24 +11,20 @@ type PropsT = {
 
 const Clients = ({ t, ...context }: PropsT) => (
     <PageWrapper title={t('clients.title')} {...context}>
-        <Column xs={12}>
-            {t('clients.intro').map((text) => (
-                <p key={text} dangerouslySetInnerHTML={{ __html: text }} />
-            ))}
-            <section className="client-logos">
-                <ClientLogos />
-                {/* {clientLogos.map((client) => (
-                    <img
-                        key={client.name}
-                        src={require(`../../assets/img/clients/${client.image}`)}
-                    />
-                ))} */}
-            </section>
-            <p>
-                <small>{t('clients.note')}</small>
-            </p>
-        </Column>
+        <Row>
+            <Column xs={12}>
+                {t('clients.intro').map((text) => (
+                    <p key={text} dangerouslySetInnerHTML={{ __html: text }} />
+                ))}
+                <section className="client-logos">
+                    <ClientLogos />
+                </section>
+                <p>
+                    <small>{t('clients.note')}</small>
+                </p>
+            </Column>
+        </Row>
     </PageWrapper>
 );
 
-export default setContext(withIntl(Clients));
+export default setContext(withIntl()(Clients));

@@ -24,4 +24,4 @@ const Technologies = ({ t, ...context }: PropsT) => (
     </PageWrapper>
 );
 
-export default setContext(withIntl(Technologies));
+export default setContext(withIntl()(Technologies));

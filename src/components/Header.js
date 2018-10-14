@@ -80,4 +80,4 @@ const PageHeader = ({ t, language, pageContext: { originalPath } }: PropsT) => (
     </Header>
 );
 
-export default withContext(withIntl(PageHeader));
+export default withContext(withIntl()(PageHeader));

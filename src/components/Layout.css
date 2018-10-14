@@ -1,4 +1,5 @@
 @import '../../node_modules/@manuel-bieh/ui/es/variables.css';
+@import '../../node_modules/@manuel-bieh/ui/es/defaults.css';
 
 @font-face {
     font-family: Classic Round;
@@ -44,7 +45,7 @@
 
 body {
     line-height: 1.6;
-    font-family: Classic Round, Georgia, Sans-Serif;
+    font-family: Classic Round, Georgia, sans-serif;
     font-size: 18px;
 }
 
@@ -59,21 +60,25 @@ main h2 {
     border-bottom: 1px solid #94b6b5;
 }
 
+ul,
+ol,
+dl {
+    margin: 1em 0 1em 1em;
+    /* margin-left: 1em;
+    margin-bottom: 1em; */
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+ul,
+ol {
+    padding-left: 24px;
+}
+
 p {
     margin-bottom: 1em;
 }
-
-/* html {
-    height: 100%;
-}
-
-body {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-height: 100%;
-} */
 
 footer,
 header {
@@ -88,7 +93,7 @@ main {
 
 h1,
 h2 {
-    font-family: Classic Round;
+    font-family: Classic Round, Georgia, sans-serif;
     font-weight: 500;
 }
 
@@ -114,9 +119,10 @@ h2 {
 }
 
 h3 {
-    font-family: Classic Round;
+    font-family: Classic Round, Georgia, sans-serif;
     font-size: 24px;
     font-weight: 500;
+    margin: 1em 0;
 }
 
 img {
@@ -150,58 +156,7 @@ a {
 a:hover {
     color: #174c5b;
 }
-.section-01 {
-    background: #fff;
-}
-.section-01 h1,
-.section-01 h2,
-.section-01 h3 {
-    color: #222;
-}
-.section-02 {
-    background: #f6f6f6;
-}
-.section-02 h1,
-.section-02 h2,
-.section-02 h3 {
-    color: #222;
-}
-.section-03 {
-    background: #94b6b5;
-}
-.section-03 h1,
-.section-03 h2,
-.section-03 h3 {
-    color: #f9f9f9;
-}
-.section-04 {
-    background: #174c5b;
-}
-.section-04 h1,
-.section-04 h2,
-.section-04 h3 {
-    color: #f9f9f9;
-}
-.logo {
-    max-width: 100%;
-    width: 256px;
-}
-.logo.large {
-    width: 384px;
-}
-.logo.medium {
-    width: 256px;
-}
-.logo.small {
-    width: 192px;
-}
-.logo.tiny {
-    width: 96px;
-}
-.center {
-    text-align: center;
-}
-
+/*
 footer {
     background: #94b6b5;
     padding-bottom: 16px;
@@ -276,5 +231,5 @@ article .cover-image {
 }
 article .cover-image img {
     width: 100%;
-}
+} */
 /*# sourceMappingURL=main.css.map */

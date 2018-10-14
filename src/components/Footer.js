@@ -18,13 +18,11 @@ const PageFooter = ({ t }: PropsT) => (
                         <Link to="/legal.html">{t('footer.legal')}</Link> |{' '}
                         <Link to="/contact.html">{t('footer.contact')}</Link>
                     </p>
-                    <p>
-                        <SocialMediaIcons />
-                    </p>
+                    <SocialMediaIcons />
                 </Column>
             </Row>
         </Grid>
     </Footer>
 );
 
-export default withIntl(PageFooter);
+export default withIntl()(PageFooter);

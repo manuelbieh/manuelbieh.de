@@ -7,11 +7,10 @@ import Layout from './Layout';
 
 type PropsT = {
     children: any,
-    subtitle?: string,
     title: string,
 };
 
-const PageWrapper = ({ children, subtitle, title, ...props }: PropsT) => {
+const PageWrapper = ({ children, title, ...props }: PropsT) => {
     return (
         <PageContext.Provider value={{ ...props }}>
             <Layout>
@@ -20,10 +19,9 @@ const PageWrapper = ({ children, subtitle, title, ...props }: PropsT) => {
                     <Row>
                         <Column>
                             <h1>{title}</h1>
-                            {subtitle && <h2>Buch</h2>}
                         </Column>
                     </Row>
-                    <Row>{children}</Row>
+                    {children}
                 </Grid>
             </Layout>
         </PageContext.Provider>
