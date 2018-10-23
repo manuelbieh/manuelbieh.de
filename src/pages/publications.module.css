@@ -1,0 +1,13 @@
+.coverImage {
+    float: left;
+    margin: 0 16px 8px 0;
+    width: 100%;
+
+    @media (--viewport-sm) {
+        width: 256px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
