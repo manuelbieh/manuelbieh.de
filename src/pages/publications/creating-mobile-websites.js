@@ -3,6 +3,8 @@ import React from 'react';
 import { withIntl } from '../../i18n';
 import { setContext } from '../../components/PageContext';
 import Layout from '../../components/Layout';
+import css from '../publications.module.css';
+console.log(css);
 
 const Article = () => (
     <Layout>
@@ -17,8 +19,8 @@ const Article = () => (
                     in October 2011.
                 </em>
             </p>
-            <div className="cover-image">
-                <img src="/assets/img/publications/devguide9.18ed27.jpg" />
+            <div className={css.coverImage}>
+                <img src={require('../../../assets/img/publications/devguide9.jpg')} />
             </div>
             <p>
                 Why create a mobile website instead of an application? Using the web has a number of

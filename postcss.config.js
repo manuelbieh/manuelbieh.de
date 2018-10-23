@@ -4,6 +4,9 @@ module.exports = {
         //     path: [paths.srcShared],
         // }),
         require('postcss-nested')(),
+        require('postcss-custom-media')({
+            importFrom: 'node_modules/@manuel-bieh/ui/es/variables.css',
+        }),
         // require('postcss-custom-properties')(),
         // require('postcss-flexbugs-fixes')(),
         // require('autoprefixer')({

@@ -47,5 +47,8 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    },
+    "devDependencies": {
+        "postcss-custom-media": "^7.0.7"
     }
 }
