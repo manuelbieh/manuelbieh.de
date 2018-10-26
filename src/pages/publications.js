@@ -84,7 +84,9 @@ const Publications = ({ t, ...context }: PropsT) => (
                     <Column xs={12} md={8}>
                         <h3>Mobile Möglichkeiten – Tools für die Entwicklung mobiler Webseiten</h3>
                         <p>Webstandards-Magazin, Ausgabe 11/11.</p>
-                        <a href="/assets/downloads/034-038_mobile-moeglichkeiten_manuel-bieh.2e1e6b.pdf">
+                        <a
+                            href={require('../../assets/downloads/034-038_mobile-moeglichkeiten_manuel-bieh.pdf')}
+                        >
                             Download [687 KB]
                         </a>
                     </Column>

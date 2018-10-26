@@ -3,6 +3,7 @@ import React from 'react';
 import { withIntl } from '../../i18n';
 import { setContext } from '../../components/PageContext';
 import Layout from '../../components/Layout';
+import css from '../publications.module.css';
 
 const Article = () => (
     <Layout>
@@ -14,6 +15,9 @@ const Article = () => (
                     veröffentlicht.
                 </em>
             </p>
+            <div className={css.coverImage}>
+                <img src={require('../../../assets/img/publications/webmaking-1111.jpg')} />
+            </div>
             <p>
                 <strong>Was werden Ihrer Meinung nach die Trends im Webdesign 2012?</strong>
             </p>

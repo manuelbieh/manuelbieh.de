@@ -4,7 +4,6 @@ import { withIntl } from '../../i18n';
 import { setContext } from '../../components/PageContext';
 import Layout from '../../components/Layout';
 import css from '../publications.module.css';
-console.log(css);
 
 const Article = () => (
     <Layout>

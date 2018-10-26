@@ -3,6 +3,7 @@ import React from 'react';
 import { withIntl } from '../../i18n';
 import { setContext } from '../../components/PageContext';
 import Layout from '../../components/Layout';
+import css from '../publications.module.css';
 
 const Article = () => (
     <Layout>
@@ -13,8 +14,8 @@ const Article = () => (
                     Dieses Interview wurde in der Ausgabe 2/2011 der Internet Intern veröffentlicht.
                 </em>
             </p>
-            <div className="cover-image">
-                <img src="/assets/img/publications/internet-intern-0211.da7f91.jpg" />
+            <div className={css.coverImage}>
+                <img src={require('../../../assets/img/publications/internet-intern-0211.jpg')} />
             </div>
             <p>
                 <strong>
