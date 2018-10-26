@@ -4,6 +4,7 @@ import { Grid, Row, Column } from '@manuel-bieh/ui/es';
 import { Link, withIntl } from '../i18n';
 import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
+import css from './publications.module.css';
 
 type PropsT = {
     t: (string) => string | string[],
@@ -15,10 +16,10 @@ const Publications = ({ t, ...context }: PropsT) => (
             <Grid>
                 <Row>
                     <Column xs={12}>
-                        <h2>Buch</h2>
+                        <h2>{t('publications.book')}</h2>
                     </Column>
                 </Row>
-                <Row className="publication">
+                <Row className={css.publication}>
                     <Column xs={12} md={4} lg={3} xl={2}>
                         <img src={require('../../assets/img/publications/mobiles-webdesign.png')} />
                     </Column>
@@ -40,10 +41,10 @@ const Publications = ({ t, ...context }: PropsT) => (
                 </Row>
                 <Row>
                     <Column xs={12}>
-                        <h2>Magazin Artikel</h2>
+                        <h2>{t('publications.magazineArticles')}</h2>
                     </Column>
                 </Row>
-                <Row className="publication">
+                <Row className={css.publication}>
                     <Column xs={12} md={4} lg={3} xl={2}>
                         <img src={require('../../assets/img/publications/webmaking-1111.jpg')} />
                     </Column>
@@ -53,7 +54,7 @@ const Publications = ({ t, ...context }: PropsT) => (
                         <Link to="/publications/webdesign-trends-2012">Weiterlesen</Link>
                     </Column>
                 </Row>
-                <Row className="publication">
+                <Row className={css.publication}>
                     <Column xs={12} md={4} lg={3} xl={2}>
                         <img
                             src={require('../../assets/img/publications/internet-intern-0211.jpg')}
@@ -65,7 +66,7 @@ const Publications = ({ t, ...context }: PropsT) => (
                         <Link to="/publications/interview-mobiles-webdesign">Weiterlesen</Link>
                     </Column>
                 </Row>
-                <Row className="publication">
+                <Row className={css.publication}>
                     <Column xs={12} md={4} lg={3} xl={2}>
                         <img src={require('../../assets/img/publications/devguide9.jpg')} />
                     </Column>
@@ -75,7 +76,7 @@ const Publications = ({ t, ...context }: PropsT) => (
                         <Link to="/publications/creating-mobile-websites">Weiterlesen</Link>
                     </Column>
                 </Row>
-                <Row className="publication">
+                <Row className={css.publication}>
                     <Column xs={12} md={4} lg={3} xl={2}>
                         <img
                             src={require('../../assets/img/publications/webstandads-magazin-11.jpg')}

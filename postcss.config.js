@@ -5,7 +5,7 @@ module.exports = {
         // }),
         require('postcss-nested')(),
         require('postcss-custom-media')({
-            importFrom: 'node_modules/@manuel-bieh/ui/es/variables.css',
+            importFrom: 'node_modules/@manuel-bieh/ui/es/media.css',
         }),
         // require('postcss-custom-properties')(),
         // require('postcss-flexbugs-fixes')(),

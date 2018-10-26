@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -7,13 +8,19 @@ import Header from './Header';
 import Footer from './Footer';
 import './Layout.css';
 
-const Layout = ({ t, i18n, children }) => (
-    <>
+type PropsT = {
+    t: (key: string) => string,
+    i18n: any,
+    children: any,
+};
+
+const Layout = ({ t, i18n, children }: PropsT) => (
+    <div className="pageWrapper">
         <Helmet title={t('meta.title')} titleTemplate={t('meta.titleTemplate')}>
             <html lang={i18n.language} />
         </Helmet>
         <Header />
-        <Grid centered>
+        <Grid className="pageContent" centered>
             <Row>
                 <Column>
                     <main>{children}</main>
@@ -21,7 +28,7 @@ const Layout = ({ t, i18n, children }) => (
             </Row>
         </Grid>
         <Footer />
-    </>
+    </div>
 );
 
 Layout.propTypes = {
