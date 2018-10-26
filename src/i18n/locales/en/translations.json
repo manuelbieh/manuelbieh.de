@@ -1,11 +1,10 @@
 {
-    "test": "Good day",
     "time": {
         "since": "since"
     },
     "meta": {
-        "title": "ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js",
-        "titleTemplate": "%s – ManuelBieh.de – Freelance Developer. JavaScript. React. Node.js"
+        "title": "Manuel Bieh – Freelance Developer. JavaScript. React. Node.js",
+        "titleTemplate": "%s – Manuel Bieh – Freelance Developer. JavaScript. React. Node.js"
     },
     "header": {
         "title": "Manuel Bieh",
@@ -13,47 +12,48 @@
         "subhead2": "JavaScript. React. Node.js"
     },
     "footer": {
-        "legal": "Legal",
+        "legal": "Legal information",
         "contact": "Contact"
     },
     "navigation": {
         "home": "Home",
         "profile": "Profile",
         "clients": "Clients",
-        "technologies": "Technologies"
+        "technologies": "Technologies",
+        "publications": "Publications"
     },
     "home": {
-        "title": "Hallo!",
+        "title": "Hello!",
         "text": [
-            "My name is <strong>Manuel Bieh</strong> und ich lebe und arbeite in <strong>Berlin</strong> als <strong>Freelance Web-Entwickler und Berater</strong> mit den Schwerpunkten <strong>Frontend</strong> und <strong>JavaScript</strong>, insbesondere <strong>React</strong> und <strong>Node.js</strong>.",
-            "Ich bin tätig für die <1>weltbesten Kunden</1>, nutze dabei (meistens) die <3>angesagtesten Technologien</3> und veröffentlichte in der Vergangenheit bereits den einen oder anderen kurzen (und manchmal auch langen) <5>Text</5>.",
-            "Bei spannenden Projekten kann man mich immer gern anfragen, ich unterstütze Sie dabei u.A. bei den folgenden Themen:",
-            "Für Projekte die regelmäßige Anwesenheit vor Ort erfordern bin ich derzeit nur in Berlin verfügbar!"
+            "My name is <strong>Manuel Bieh</strong> and I live and work in <strong>Berlin</strong> as <strong>Freelance Web Developer and Consultant</strong> with the focus on <strong>Frontend</strong> and <strong>JavaScript</strong>, in particular <strong>React</strong> and <strong>Node.js</strong>.",
+            "I'm working for the <1>best clients in the world</1>, using (mostly) the <3>best technologies</3> and in the past I also published some short (and sometimes also long) <5>texts</5> (in German only).</p>",
+            "For exciting projects you can always ask me if I'm currently available for hire. I can provide you with support for the following topics:",
+            "For on-site projects I'm currently only available in Berlin!"
         ],
         "services": [
-            "JavaScript-/Frontend Entwicklung",
-            "Konzeption von Frontend-Architektur",
-            "Setup und Optimierung von Entwicklungsprozessen",
+            "JavaScript-/Frontend Development (React focused)",
+            "Conception of Frontend Architecture",
+            "Setup and Optimization of Development Workflows and Processes",
             "Interim CTO"
         ]
     },
     "profile": {
-        "title": "Profil",
+        "title": "Profile",
         "intro": [
-            "<strong>Manuel Bieh</strong>, geboren im Spätsommer '84, aufgewachsen in der Fußball-Hauptstadt <strong>Dortmund</strong>, mittlerweile wohnhaft in der Bundeshauptstadt <strong>Berlin</strong>.",
-            "Wirklich interessant wurde mein Leben wohl im Jahr 2000. Dort fing ich als Praktikant, später als Aushilfe und ein Jahr darauf schließlich als Auszubildender zum <strong>Mediengestalter für Digital- und Printmedien</strong> bei einer Dortmunder Agentur für Internetlösungen an. Doch dies sollte noch nicht genug sein und so gesellte sich kurz darauf bereits eine zweijährige berufsbegleitende Fortbildung zum <strong>Medienfachwirt (IHK)</strong> dazu, mit erfolgreichem Abschluss im August 2008.",
-            "Während dieser Zeit arbeitete ich als <strong>freier Web-Entwickler</strong> für diverse Agenturen und eigene Kunden, als Fachautor und Gutachter für diverse Magazine, sowie als angestellter Entwickler für Online-Anwendungen bei der raphael GmbH, ehe ich im Mai 2008 die Mobilistics GmbH gründete. Ein Unternehmen, das sich als deutschlandweit eins der ersten mit der Erstellung und Optimierung von Websites für mobile Endgeräte beschäftigte, bei dem ich als technischer Geschäftsführer agierte. Während dieser Zeit veröffentlichte ich außerdem das erste deutschsprachige Buch zum Thema „Mobiles Webdesign“ beim Galileo Computing Verlag (heute Rheinwerk Verlag).",
-            "Nach meinem Ausstieg aus der Mobilistics GmbH machte ich weitere interessante Erfahrungen als <strong>Software-Entwickler</strong> bei der Sevenval GmbH, einem der größten Technologie-Anbieter für mobiles Internet in Europa, als <strong>IT-Berater</strong> bei der IT-Unternehmensberatung itemis AG und als <strong>technischer Leiter</strong> bei der ubiiqu GmbH, ehe ich mich entschied wieder als <strong>freier Entwickler und Berater</strong> tätig zu sein. Eine Tätigkeit die mir immer schon viel Spaß bereitet hat und die ich bis heute mit großer Leidenschaft ausübe."
+            "<strong>Manuel Bieh</strong>, born in the late summer of 1984 in Dortmund, Germany now living and working in <strong>Berlin</strong>.",
+            "My life probably got noteworthy in the year 2000, when I began to work for an agency for internet solutions as an intern, one year later as an apprentice. Three years later, in June 2005, I got my first degree as <strong>Digital Media Designer</strong> (specialized in Online Media). This was just the beginning and so I decided to begin a two-year advanced training at the Chamber of Industry and Commerce as a <strong>Media Engineer</strong> which I successfully completed in August 2008.",
+            "While I was completing my training I worked as <strong>Freelance Web Developer</strong> for several agencies as well as for own clients, as Author and Expert for various magazines and as employed <strong>Web Developer</strong> for the raphael GmbH. In May 2008 I founded my first company Mobilistics GmbH, one of the first companies in Germany spezialized in developing and optimizing websites for mobile devices. During that time I also published the first German book about <strong>Mobile Webdesign</strong> at the prestigious German publisher Galileo Computing (now: Rheinwerk).",
+            "After a first short trip into the world of entrepreneurship as <strong>Technical Lead</strong> and <strong>CEO</strong> of the Mobilistics GmbH and other very interesting experiences as <strong>Software Developer</strong> at Sevenval, one of the biggest technology providers for mobile solutions in Europe, as <strong>IT Consultant</strong> for itemis AG and as <strong>Co-Founder and CTO</strong> of ubiiqu GmbH I am now working as <strong>Freelance Developer</strong> again. A profession I have always enjoyed and still do."
         ],
         "sections": {
             "work": {
-                "headline": "Professional Practice"
+                "headline": "Professional Experience"
             },
             "education": {
                 "headline": "Training/Education"
             },
             "qualifications": {
-                "headline": "Qualifikations/Degrees"
+                "headline": "Qualifikations/­Degrees"
             },
             "skills": {
                 "headline": "Expert knowledge",
@@ -66,26 +66,39 @@
         }
     },
     "clients": {
-        "title": "Kunden",
+        "title": "Clients",
         "intro": [
-            "Manchmal Schweiß und Tränen aber immer auch viel Freude und neue Erfahrungen. Eins haben alle diese Kunden gemeinsam: ich bin stolz und dankbar für jeden Einzelnen, der in den letzten Jahren sein Vertrauen in mich gesetzt hat!",
-            "Bisher war ich für verschiedene Kunden aus den unterschiedlichsten Bereichen tätig. Ob direkt für die jeweiligen Kunden oder für Agenturen als externe Erweiterung des eigenen Teams. Für große Unternehmen, kleine Unternehmen, mittlere Unternehmen. Für Startups, für Konzerne, für Startups die sich wie Konzerne aufführten und für Konzerne die der Meinung waren noch immer ein Startup zu sein (hallo Zalando ;))",
-            "Hier ein Auszug der Kunden, für die ich in der Vergangenheit tätig war:"
+            "Sometimes sweat and tears but always a lot of fun and new experiences. There's one thing all these clients have in common: I'm proud and grateful for every single one who trusted me with their project!",
+            "To date I've worked for various clients from very different areas and industries. Directly for the clients or as external extension of an agency's team. For big companies, small companies, medium sized companie. For startups, for corporations, for startups which behaved like corporations and for corporations which still were of the opinion to still be a startup (looking at you, Zalando! ;))",
+            "Here is an excerpt of some of the companies and brands I've worked for in the past:"
         ],
-        "note": "* Rossmann und Migros im Auftrag von Aperto, Adidas im Auftrag von Sevenval, DocMorris im Auftrag von Publicis Pixelpark."
+        "note": "* Rossmann and Migros on behalf of Aperto, Adidas on behalf of Sevenval, DocMorris on behalf of Publicis Pixelpark."
     },
     "technologies": {
-        "title": "Technologien",
+        "title": "Technologies",
         "intro": [
-            "In den knapp 15 Jahren die ich bisher als Entwickler tätig war, gab es wahrscheinlich nur wenige Technologien mit denen ich nicht zumindest am Rande schon einmal zu tun hatte. Angefangen habe ich dabei mit reiner HTML-Entwicklung (damals wurde noch für den IE5 und Netscape 4.7 optimiert!), ein wenig später kam dann CSS hinzu (was es anfangs damals tatsächlich noch nicht gab).",
-            "In 1998, im zarten Alter von 14 Jahren, kaufte ich von meinem Taschengeld mein erstes Buch zum Thema <strong>JavaScript</strong> und bin der Sprache bis heute treu geblieben. Zwischen 2004 und 2008 benötigte ich dann mal etwas Abwechslung und so beschäftigte ich mich dort überwiegend mit Backend-Entwicklung mit PHP und MySQL ehe ich dank HTML 5 wieder fast ausschließlich zur Frontend-Entwicklung zurückkehrte.",
-            "2009 entschied ich mich also dafür, mich wieder stärker auf meinen Ursprung zu besinnen und konzentrierte mich fortan wieder auf die Frontend-Entwicklung mit HTML, CSS und JavaScript. Der JavaScript-Anteil wurde mit der Zeit immer größer, 2011 kamen erste kleine Projekte mit Node.js dazu, im Laufe der Zeit kamen mehr Projekte mit Node.js hinzu und mittlerweile existieren auch einige <a href='https://www.npmjs.com/~manuelbieh'>Packages von mir in npm</a>.",
-            "Ich bemühe mich stets die richtigen Tools für die zu lösenden Aufgaben zu verwenden statt wie manch anderer die immer gleichen Tools für sämtliche Art von Problemen zu nutzen. Dadurch habe ich mir im Laufe der Zeit ein ziemlich breites Wissen in ganz unterschiedlichen Technologien angeeignet und arbeite mich für gewöhnlich auch schnell in neue Technologien ein.",
-            "Aktuell muss ich zugeben, habe ich eine starke Zuneigung für React (+ Ecosystem), Webpack und Node.js entwickelt und bemühe mich in der Projekt-Akquise primär um solche Projekte, in denen der Einsatz von React sinnvoll ist.",
-            "Die Logos spiegeln einige der Technologien wider mit denen ich in der Vergangenheit gearbeitet habe."
+            "In the past 15 years I was working as Developer there was barely any web technology I had not at least marginally used at some point. I laid the foundation of my professional career doing HTML (optimized for IE5 and Netscape 4.7 at that time), a bit later I also started using CSS (which indeed was not available at the time I began using HTML).",
+            "In 1998, at the tender age of 14, I used my pocket money to buy my first book about JavaScript and, well, I'm still using it today! (The language of course, not the book! ;))",
+            "Between 2004 and 2008 I had the desire to make some new experiences and broaden my knowledge and so I switchted to mostly doing PHP- and MySQL backend development during that time. With the rise of HTML 5 early 2009 I then switched back to doing frontend development with HTML, CSS and JavaScript almost exclusively.",
+            "As time flew by the share of JavaScript in my daily work grew continuously, in 2011 I also started doing some smaller Node.js projects, later I did some more and bigger Node.js projects and in the meantime I have also published some <a href=\"https://www.npmjs.com/~manuelbieh\">own Node modules on npm</a> and so I'd now consider myself more of a JavaScript Developer than a Frontend Developer (though I still have some decent HTML and CSS skills ;)).",
+            "I always try to use the right tool for the problems I have to solve instead of using the same toolset over and over again for each and every project no matter what the requirements are. These circumstances allowed me to grow a broad knowledge about many different technologies in the web sphere and usually I don't need much time to familiarize with unknown technologies or projects.",
+            "I must admit, though, that I have recently developed a lot of affection towards React (+ Ecosystem), Webpack and Node.js and so I try to primarily acquire projects where the usage of React would be useful.",
+            "The logos reflect some of the technologies I've worked with in the past."
         ]
     },
     "publications": {
-        "title": "Publications"
+        "title": "Publiations"
+    },
+    "contact": {
+        "title": "Contact",
+        "text": [
+            "I'm glad you want to get in touch with me. Since I'm getting a lot of uninteresting cold calls I'm ignoring my phone if an unknown number is calling. So in case we haven't been in contact yet or you're not sure if I still got your number just send me an email and provide me with some information what I can do for you. We can then arrange a phonecall if necessary.",
+            "Manuel Bieh<br />Zelterstr. 10<br />10439 Berlin",
+            "Phone: (+49) 177 2951165<br />Email: manuel.bieh@wiremore.com"
+        ]
+    },
+    "legal": {
+        "title": "Legal information",
+        "note": "This page is required by German law. It's only available in German."
     }
 }

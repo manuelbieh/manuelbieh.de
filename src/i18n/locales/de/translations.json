@@ -88,5 +88,17 @@
     },
     "publications": {
         "title": "Veröffentlichungen"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "text": [
+            "Es freut mich wenn ich Sie neugigerig gemacht habe und Sie mit mir Kontakt aufnehmen möchten. Da ich eine Unmenge and Cold-Calls bekomme bin ich inzwischen dazu übergegangen Anrufe von Telefonnummern die ich nicht kenne zu ignorieren. Sollten wir also nicht bereits in Kontakt stehen bitte ich Sie mir stattdessen eine E-Mail zu schreiben und mir ihr Anliegen kurz zu schildern. Per E-Mail können wir dann gern einen Termin für ein Telefonat vereinbaren.",
+            "Manuel Bieh<br />Zelterstr. 10<br />10439 Berlin",
+            "Tel: (+49) 177 2951165<br />E-Mail: manuel.bieh@wiremore.com"
+        ]
+    },
+    "legal": {
+        "title": "Impressum",
+        "note": ""
     }
 }
