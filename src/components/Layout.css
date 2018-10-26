@@ -161,3 +161,13 @@ a {
 a:hover {
     color: #174c5b;
 }
+
+.pageWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageContent {
+    flex: 1 0 auto;
+}

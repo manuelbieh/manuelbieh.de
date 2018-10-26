@@ -87,7 +87,9 @@
         ]
     },
     "publications": {
-        "title": "Publiations"
+        "title": "Publications",
+        "book": "Book",
+        "magazineArticles": "Magazine Articles"
     },
     "contact": {
         "title": "Contact",
