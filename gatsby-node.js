@@ -42,6 +42,7 @@ exports.onCreatePage = ({ page, actions }) => {
             },
         };
         createPage(redirectPage);
+
         if (page.path !== oldPage.path) {
             deletePage(oldPage);
         }

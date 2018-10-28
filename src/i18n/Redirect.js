@@ -1,39 +1,36 @@
 // @flow
-import React, { PureComponent } from 'react';
+import React from 'react';
+// import React, { PureComponent } from 'react';
 import { withPrefix } from 'gatsby-link';
 import browserLang from 'browser-lang';
 import { languages } from './index';
 
-type PropsT = {};
+type PropsT = {
+    location: string,
+};
 
-class Redirect extends PureComponent {
-    constructor(props) {
-        super(props);
+const Redirect = ({ location }: PropsT) => {
+    const langKeys = Object.keys(languages);
+    const { pathname } = location;
 
-        const langKeys = Object.keys(languages);
-        const { pathname } = props.location;
+    // Skip build, Browsers only
+    if (typeof window !== 'undefined') {
+        const detected =
+            window.localStorage.getItem('language') ||
+            browserLang({
+                languages: langKeys,
+                fallback: 'en',
+            });
 
-        // Skip build, Browsers only
-        if (typeof window !== 'undefined') {
-            const detected =
-                window.localStorage.getItem('language') ||
-                browserLang({
-                    languages: langKeys,
-                    fallback: 'en',
-                });
+        const newPath = withPrefix(`/${detected}${pathname}`);
+        window.localStorage.setItem('language', detected);
 
-            const newPath = withPrefix(`/${detected}${pathname}`);
-            window.localStorage.setItem('language', detected);
-
-            if (newPath !== location.pathname) {
-                window.location.replace(newPath);
-            }
+        if (newPath !== location.pathname) {
+            window.location.replace(newPath);
         }
     }
 
-    render() {
-        return <div />;
-    }
-}
+    return <div />;
+};
 
 export default Redirect;
