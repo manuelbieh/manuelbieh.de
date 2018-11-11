@@ -19,5 +19,6 @@ module.exports = {
         },
         'gatsby-plugin-offline',
         'gatsby-plugin-postcss',
+        'gatsby-plugin-nprogress',
     ],
 };
