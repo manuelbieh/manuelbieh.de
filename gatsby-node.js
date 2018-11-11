@@ -25,6 +25,10 @@ exports.onCreatePage = ({ page, actions }) => {
         return Promise.resolve();
     }
 
+    if (page.componentPath.includes('src/pages') === false) {
+        return Promise.resolve();
+    }
+
     const oldPage = Object.assign({}, page);
     page.path = replacePath(page.path);
 
