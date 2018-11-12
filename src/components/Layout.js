@@ -9,14 +9,15 @@ import Footer from './Footer';
 import './Layout.css';
 
 type PropsT = {
-    t: (key: string) => string,
-    i18n: any,
     children: any,
+    i18n: any,
+    t: (key: string) => string,
+    title?: string,
 };
 
-const Layout = ({ t, i18n, children }: PropsT) => (
+const Layout = ({ t, i18n, children, title }: PropsT) => (
     <div className="pageWrapper">
-        <Helmet title={t('meta.title')} titleTemplate={t('meta.titleTemplate')}>
+        <Helmet title={title || t('meta.title')} titleTemplate={t('meta.titleTemplate')}>
             <html lang={i18n.language} />
         </Helmet>
         <Header />

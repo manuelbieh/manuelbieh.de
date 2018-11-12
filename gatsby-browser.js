@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+// @flow
+import React from 'react';
+import { PageContext } from './src/components/PageContext';
 
-// You can delete this file if you're not using it
+type Props = {
+    element: React.Element,
+    props: any,
+};
+
+export const wrapPageElement = ({ element, props }: Props) => (
+    <PageContext.Provider value={{ ...props }}>{element}</PageContext.Provider>
+);
