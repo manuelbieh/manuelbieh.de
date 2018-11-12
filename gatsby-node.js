@@ -12,7 +12,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 };
 
 // workaround because gatsby seems to have issues with using ES module imports
-// and mixing oc CJS and ES does not work
+// and mixing of CJS and ES does not work
 const languages = {
     de: 'Deutsch',
     en: 'English',
