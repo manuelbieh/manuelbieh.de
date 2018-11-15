@@ -4,6 +4,7 @@ import { DataTable, Column, Row } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
 import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
+import css from './profile.module.css';
 
 type PropsT = {
     t: (string) => string | string[],
@@ -71,10 +72,16 @@ const Profile = ({ t, ...props }: PropsT) => (
         <Row>
             <Column>
                 <h2>{t('profile.sections.work.headline')}</h2>
-                <DataTable data={workDataToDataTable(t('cv:work'), t)} />
+                <DataTable
+                    data={workDataToDataTable(t('cv:work'), t)}
+                    columnClassNames={[css.cell01]}
+                />
 
                 <h2>{t('profile.sections.education.headline')}</h2>
-                <DataTable data={educationDataToDataTable(t('cv:education'), t)} />
+                <DataTable
+                    data={educationDataToDataTable(t('cv:education'), t)}
+                    columnClassNames={[css.cell01]}
+                />
 
                 <h2>{t('profile.sections.qualifications.headline')}</h2>
                 <ul>
