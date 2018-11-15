@@ -1,22 +1,17 @@
+const path = require('path');
+
 module.exports = {
     plugins: [
-        // require('postcss-import')({
-        //     path: [paths.srcShared],
-        // }),
+        require('postcss-import')({
+            path: [path.resolve('src'), path.resolve('node_modules')],
+        }),
         require('postcss-nested')(),
         require('postcss-custom-media')({
             importFrom: 'node_modules/@manuel-bieh/ui/es/media.css',
         }),
-        // require('postcss-custom-properties')(),
-        // require('postcss-flexbugs-fixes')(),
-        // require('autoprefixer')({
-        //     browsers: ['last 3 versions', 'ie >= 9', 'Edge <= 15'],
-        // }),
-        // require('postcss-custom-properties')(),
-        // require('postcss-assets')({
-        //     basePath: './assets',
-        // }),
-        // require('postcss-normalize')(),
+        require('autoprefixer')({
+            browsers: ['last 3 versions', 'ie >= 9', 'Edge >= 13'],
+        }),
     ],
     sourceMap: true,
 };

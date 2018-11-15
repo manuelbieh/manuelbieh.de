@@ -1,5 +1,4 @@
-@import '../../node_modules/@manuel-bieh/ui/es/variables.css';
-/* @import '../../node_modules/@manuel-bieh/ui/es/defaults.css'; */
+@import '@manuel-bieh/ui/es/variables.css';
 
 @font-face {
     font-family: Classic Round;
@@ -44,9 +43,9 @@
 }
 
 body {
-    line-height: 1.6;
     font-family: Classic Round, Georgia, sans-serif;
     font-size: 18px;
+    line-height: 1.6;
 }
 
 footer,
@@ -115,8 +114,8 @@ h1:first-child {
 
 h2 {
     font-size: 28px;
-    padding-bottom: 4px;
     margin-top: 1.5em;
+    padding-bottom: 4px;
 }
 
 h3 {
