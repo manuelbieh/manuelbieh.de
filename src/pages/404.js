@@ -1,15 +1,17 @@
 import React from 'react';
+import { Column, Row } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
-import { PageContext } from '../components/PageContext';
-import Layout from '../components/Layout';
+// import { setContext } from '../components/PageContext';
+import PageWrapper from '../components/PageWrapper';
 
-const NotFoundPage = (props) => (
-    <PageContext.Provider value={props}>
-        <Layout>
-            <h1>NOT FOUND</h1>
-            <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-        </Layout>
-    </PageContext.Provider>
+const NotFoundPage = ({ t, ...context }) => (
+    <PageWrapper title={t('404.title')} {...context}>
+        <Row>
+            <Column>
+                <p>{t('404.text.0')}</p>
+            </Column>
+        </Row>
+    </PageWrapper>
 );
 
 export default withIntl()(NotFoundPage);

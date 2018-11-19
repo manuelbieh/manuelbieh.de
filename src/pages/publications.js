@@ -2,7 +2,7 @@
 import React from 'react';
 import { Grid, Row, Column } from '@manuel-bieh/ui/es';
 import { Link, withIntl } from '../i18n';
-import { setContext } from '../components/PageContext';
+// import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
 import css from './publications.module.css';
 
@@ -105,4 +105,4 @@ const Publications = ({ t, ...context }: PropsT) => (
     </PageWrapper>
 );
 
-export default setContext(withIntl()(Publications));
+export default withIntl()(Publications);

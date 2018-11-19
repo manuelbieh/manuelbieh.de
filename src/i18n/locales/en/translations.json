@@ -102,5 +102,9 @@
     "legal": {
         "title": "Legal information",
         "note": "This page is required by German law. It's only available in German."
+    },
+    "404": {
+        "title": "Oops, this page does not exist.",
+        "text": ["Looks like you tried to access a non-existing page. I'm sorry for that."]
     }
 }

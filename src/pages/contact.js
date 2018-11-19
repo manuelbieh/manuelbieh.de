@@ -2,7 +2,7 @@
 import React from 'react';
 import { Column, Row } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
-import { setContext } from '../components/PageContext';
+// import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
 
 type PropsT = {
@@ -21,4 +21,4 @@ const Contact = ({ t, ...props }: PropsT) => (
     </PageWrapper>
 );
 
-export default setContext(withIntl()(Contact));
+export default withIntl()(Contact);

@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
-import { DataTable, Column, Row } from '@manuel-bieh/ui/es';
+import { Column, Row } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
-import { setContext } from '../components/PageContext';
+// import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
 
 type PropsT = {
@@ -103,7 +103,7 @@ const Legal = ({ t, ...props }: PropsT) => (
                     Es kann vorkommen, dass innerhalb dieses Onlineangebotes Inhalte Dritter, wie
                     zum Beispiel Videos von YouTube, Kartenmaterial von Google-Maps, RSS-Feeds oder
                     Grafiken von anderen Webseiten eingebunden werden. Dies setzt immer voraus, dass
-                    die Anbieter dieser Inhalte (nachfolgend bezeichnet als "Dritt-Anbieter") die
+                    die Anbieter dieser Inhalte (nachfolgend bezeichnet als „Dritt-Anbieter“) die
                     IP-Adresse der Nutzer wahr nehmen. Denn ohne die IP-Adresse, könnten sie die
                     Inhalte nicht an den Browser des jeweiligen Nutzers senden. Die IP-Adresse ist
                     damit für die Darstellung dieser Inhalte erforderlich. Wir bemühen uns nur
@@ -147,4 +147,4 @@ const Legal = ({ t, ...props }: PropsT) => (
     </PageWrapper>
 );
 
-export default setContext(withIntl()(Legal));
+export default withIntl()(Legal);

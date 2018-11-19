@@ -2,7 +2,7 @@
 import React from 'react';
 import { Column, Row, TechLogos } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
-import { setContext } from '../components/PageContext';
+// import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
 
 type PropsT = {
@@ -24,4 +24,4 @@ const Technologies = ({ t, ...context }: PropsT) => (
     </PageWrapper>
 );
 
-export default setContext(withIntl()(Technologies));
+export default withIntl()(Technologies);

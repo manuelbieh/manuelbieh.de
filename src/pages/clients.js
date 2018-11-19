@@ -2,7 +2,7 @@
 import React from 'react';
 import { ClientLogos, Column, Row } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
-import { setContext } from '../components/PageContext';
+// import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
 
 type PropsT = {
@@ -27,4 +27,4 @@ const Clients = ({ t, ...context }: PropsT) => (
     </PageWrapper>
 );
 
-export default setContext(withIntl()(Clients));
+export default withIntl()(Clients);

@@ -102,5 +102,11 @@
     "legal": {
         "title": "Impressum",
         "note": ""
+    },
+    "404": {
+        "title": "Hoppla, diese Seite existiert nicht.",
+        "text": [
+            "Sieht aus als hättest du eine Seite aufgerufen die nicht existiert. Das tut mir leid."
+        ]
     }
 }

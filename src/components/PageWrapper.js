@@ -2,6 +2,7 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { Grid, Row, Column } from '@manuel-bieh/ui/es';
+import { setContext } from '../components/PageContext';
 import Layout from './Layout';
 
 type PropsT = {
@@ -23,4 +24,4 @@ const PageWrapper = ({ children, title }: PropsT) => (
     </Layout>
 );
 
-export default PageWrapper;
+export default setContext(PageWrapper);
