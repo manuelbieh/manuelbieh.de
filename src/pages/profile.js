@@ -2,7 +2,7 @@
 import React from 'react';
 import { DataTable, Column, Row } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
-import { setContext } from '../components/PageContext';
+// import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
 import css from './profile.module.css';
 
@@ -127,4 +127,4 @@ const Profile = ({ t, ...props }: PropsT) => (
     </PageWrapper>
 );
 
-export default setContext(withIntl()(Profile));
+export default withIntl()(Profile);

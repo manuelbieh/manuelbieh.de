@@ -11,7 +11,7 @@ type PropsT = {
     activeClassName?: string,
 };
 
-const I18nLink = ({ to, children, language, className, activeClassName }: PropsT) => {
+const I18nLink = ({ to, children, language = 'en', className, activeClassName }: PropsT) => {
     const toWithLang = language ? `/${language}${to}` : `${to}`;
     return (
         <Link to={toWithLang} className={className} activeClassName={activeClassName}>

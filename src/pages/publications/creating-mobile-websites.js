@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { withIntl } from '../../i18n';
-import { setContext } from '../../components/PageContext';
+// import { setContext } from '../../components/PageContext';
 import Layout from '../../components/Layout';
 import css from '../publications.module.css';
 
@@ -436,4 +436,4 @@ const Article = () => (
     </Layout>
 );
 
-export default setContext(withIntl()(Article));
+export default withIntl()(Article);

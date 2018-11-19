@@ -28,7 +28,7 @@ const NavItems = {
     en: ['home', 'profile', 'clients', 'technologies'],
 };
 
-const PageHeader = ({ t, language, pageContext: { originalPath } }: PropsT) => (
+const PageHeader = ({ t, language = 'en', pageContext: { originalPath } }: PropsT) => (
     <Header className={css.wrapper}>
         <Grid centered>
             <Row>
@@ -50,19 +50,18 @@ const PageHeader = ({ t, language, pageContext: { originalPath } }: PropsT) => (
                     <nav>
                         <ul>
                             <li style={{ float: 'right' }}>
-                                {Object.entries(languages).map(
-                                    ([code, label]) =>
-                                        code === language ? (
-                                            <span key={code}>{label}</span>
-                                        ) : (
-                                            <GatsbyLink
-                                                activeClassName={css.active}
-                                                key={code}
-                                                to={`${code}${originalPath || ''}`}
-                                            >
-                                                {label}
-                                            </GatsbyLink>
-                                        )
+                                {Object.entries(languages).map(([code, label]) =>
+                                    code === language ? (
+                                        <span key={code}>{label}</span>
+                                    ) : (
+                                        <GatsbyLink
+                                            activeClassName={css.active}
+                                            key={code}
+                                            to={`${code}${originalPath || ''}`}
+                                        >
+                                            {label}
+                                        </GatsbyLink>
+                                    )
                                 )}
                             </li>
                             {NavItems[language].map((item) => (
