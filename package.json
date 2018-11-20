@@ -3,6 +3,22 @@
     "description": "Website of Manuel Bieh",
     "version": "1.0.0",
     "author": "Manuel Bieh <info@manuelbieh.de>",
+    "keywords": [
+        "gatsby"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "start": "yarn develop",
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "zip": "cd public/ && zip -r ../release.zip .",
+        "format": "prettier --write '**/*.js'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/manuelbieh/manuelbieh.de"
+    },
     "dependencies": {
         "@babel/preset-flow": "^7.0.0",
         "@manuel-bieh/cv": "^1.0.6",
@@ -38,21 +54,6 @@
         "react-dom": "^16.6.1",
         "react-helmet": "^5.2.0",
         "react-i18next": "^8.3.7"
-    },
-    "keywords": [
-        "gatsby"
-    ],
-    "license": "MIT",
-    "scripts": {
-        "start": "yarn develop",
-        "build": "gatsby build",
-        "develop": "gatsby develop",
-        "format": "prettier --write '**/*.js'",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/manuelbieh/manuelbieh.de"
     },
     "devDependencies": {
         "autoprefixer": "^9.3.1",
