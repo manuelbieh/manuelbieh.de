@@ -1,0 +1,29 @@
+.coverImage {
+    float: left;
+    margin: 0 16px 8px 0;
+    width: 100%;
+
+    @media (--viewport-sm) {
+        width: 256px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.publication {
+    h3 {
+        margin-top: 0;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        width: 320px;
+        @media (--viewport-md) {
+            max-width: 160px;
+        }
+    }
+}

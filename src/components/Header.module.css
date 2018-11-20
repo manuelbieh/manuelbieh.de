@@ -1,0 +1,55 @@
+.wrapper {
+    hgroup {
+        margin-bottom: -16px;
+    }
+
+    h1,
+    h2 {
+        margin: 0;
+    }
+
+    h1 a {
+        text-decoration: none;
+        border-bottom: 3px solid;
+        margin-bottom: 8px;
+        display: inline-block;
+        padding-bottom: 4px;
+    }
+
+    h1 a,
+    h1 a:hover {
+        color: #00c7c2;
+    }
+
+    nav {
+        margin-left: -16px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav li a {
+        color: #f9f9f9;
+        display: inline-block;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    nav li a.active,
+    nav li a:hover {
+        color: #94b6b5;
+    }
+
+    nav span {
+        display: inline-block;
+        padding: 8px;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,172 @@
+@import '@manuel-bieh/ui/es/variables.css';
+
+@font-face {
+    font-family: Classic Round;
+    src: url(../../assets/fonts/classicround-regular-webfont.eot);
+    src: url(../../assets/fonts/classicround-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../../assets/fonts/classicround-regular-webfont.woff) format('woff'),
+        url(../../assets/fonts/classicround-regular-webfont.ttf) format('truetype'),
+        url(../../assets/fonts/classicround-regular-webfont.svg#classic_roundregular) format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Classic Round;
+    src: url(../../assets/fonts/classicround-italic-webfont.eot);
+    src: url(../../assets/fonts/classicround-italic-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../../assets/fonts/classicround-italic-webfont.woff) format('woff'),
+        url(../../assets/fonts/classicround-italic-webfont.ttf) format('truetype'),
+        url(../../assets/fonts/classicround-italic-webfont.svg#classic_rounditalic) format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: Classic Round;
+    src: url(../../assets/fonts/classicround-medium-webfont.eot);
+    src: url(../../assets/fonts/classicround-medium-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../../assets/fonts/classicround-medium-webfont.woff) format('woff'),
+        url(../../assets/fonts/classicround-medium-webfont.ttf) format('truetype'),
+        url(../../assets/fonts/classicround-medium-webfont.svg#classic_round_mediumregular)
+            format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Classic Round;
+    src: url(../../assets/fonts/classicround-bold-webfont.eot);
+    src: url(../../assets/fonts/classicround-bold-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../../assets/fonts/classicround-bold-webfont.woff) format('woff'),
+        url(../../assets/fonts/classicround-bold-webfont.ttf) format('truetype'),
+        url(../../assets/fonts/classicround-bold-webfont.svg#classic_roundbold) format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: Classic Round, Georgia, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer,
+header {
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+main {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+main {
+    display: block;
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+main h2 {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #94b6b5;
+}
+
+ul,
+ol,
+dl {
+    margin: 1em 0 1em 1em;
+    /* margin-left: 1em;
+    margin-bottom: 1em; */
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+ul,
+ol {
+    padding-left: 24px;
+}
+
+p {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h1,
+h2 {
+    font-family: Classic Round, Georgia, sans-serif;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 1.5em;
+    padding-bottom: 4px;
+}
+
+h3 {
+    font-family: Classic Round, Georgia, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(2n) {
+    background: #f6f6f6;
+}
+
+td,
+th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+a {
+    color: #00c7c2;
+}
+
+a:hover {
+    color: #174c5b;
+}
+
+.pageWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageContent {
+    flex: 1 0 auto;
+}
