@@ -22,7 +22,7 @@
     "dependencies": {
         "@babel/preset-flow": "^7.0.0",
         "@manuel-bieh/cv": "^1.0.6",
-        "@manuel-bieh/ui": "^1.1.6",
+        "@manuel-bieh/ui": "^1.1.7",
         "browser-lang": "^0.0.1",
         "classnames": "^2.2.6",
         "eslint": "^5.9.0",
