@@ -1141,10 +1141,10 @@
   resolved "https://registry.yarnpkg.com/@manuel-bieh/cv/-/cv-1.0.6.tgz#d3f55cab79070ed1a5944a473c0818d6150db23d"
   integrity sha512-GpOTJ6UN1AknToLo1OaXd8Jo2WdZidLThayJoo1AldFH8TMQ2lQPXtNbZ20D+l/FmpwsZYxVnIVaTgyCYqG8cQ==
 
-"@manuel-bieh/ui@^1.1.1":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@manuel-bieh/ui/-/ui-1.1.2.tgz#04bafc3e89492ad8160c2fb11cac9a535b56321c"
-  integrity sha512-4EWLK9vZps78+mqBfc355gf7t0Kl5YIAt82RoDXjWuxVpuLvzqwV7M3uW6Uh/UfgeoznVDrnS6nh6jsCHQaWlA==
+"@manuel-bieh/ui@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@manuel-bieh/ui/-/ui-1.1.6.tgz#1c1822fb02c2ae55b60f9158b49730050292c0f1"
+  integrity sha512-2ga4ml4JhrmqWPRfY6r1susCg8nig69/O9MoDavuvPQ71p25Uxc8uXJ7M3mCvUZcwXF0X4kmPJ4EfR8reG+M0A==
   dependencies:
     "@storybook/addon-actions" "^4.0.4"
     "@storybook/addon-backgrounds" "^4.0.4"
