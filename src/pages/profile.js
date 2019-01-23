@@ -2,7 +2,6 @@
 import React from 'react';
 import { DataTable, Column, Row } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
-// import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
 import css from './profile.module.css';
 
@@ -122,7 +121,6 @@ const Profile = ({ t, ...props }: PropsT) => (
                     {t('cv:skills.economic.basic').join(', ')}
                 </p>
             </Column>
-            {/* <Column>{JSON.stringify(t('cv:work'), null, 2)}</Column> */}
         </Row>
     </PageWrapper>
 );

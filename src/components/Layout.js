@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { withIntl } from '../i18n';
 import { Grid, Row, Column } from '@manuel-bieh/ui/es';
@@ -31,9 +30,5 @@ const Layout = ({ t, i18n, children, title }: PropsT) => (
         <Footer />
     </div>
 );
-
-Layout.propTypes = {
-    children: PropTypes.node.isRequired,
-};
 
 export default withIntl()(Layout);
