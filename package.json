@@ -36,7 +36,7 @@
         "eslint-plugin-react-hooks": "^0.0.0",
         "eslint-plugin-security": "^1.4.0",
         "flow-bin": "^0.86.0",
-        "gatsby": "^2.0.45",
+        "gatsby": "^2.0.84",
         "gatsby-plugin-manifest": "next",
         "gatsby-plugin-nprogress": "^2.0.6",
         "gatsby-plugin-offline": "^2.0.13",
