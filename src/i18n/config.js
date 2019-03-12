@@ -37,4 +37,6 @@ i18next.init({
     },
 });
 
+i18next.languages = ['de', 'en'];
+
 export default i18next;

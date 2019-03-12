@@ -63,6 +63,13 @@ exports.onCreatePage = ({ page, actions }) => {
                     originalPath: page.path,
                 },
             };
+
+            if (localePage.path === '/de/404.html') {
+                localePage.matchPath = '/de/*';
+            } else if (localePage.path === '/en/404.html') {
+                localePage.matchPath = '/en/*';
+            }
+
             createPage(localePage);
         });
 

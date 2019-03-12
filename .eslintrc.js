@@ -26,6 +26,7 @@ module.exports = {
         'import/no-unassigned-import': 0,
         'import/no-named-as-default-member': 0,
         'import/namespace': [2, { allowComputed: true }],
+        'import/prefer-default-export': 0,
         'prettier/prettier': 'error',
         'no-alert': 1,
         'react/jsx-no-bind': 1,
