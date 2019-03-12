@@ -10,7 +10,7 @@ module.exports = {
             options: {
                 name: 'manuel-bieh',
                 short_name: 'Manuel Bieh',
-                start_url: '/',
+                start_url: '/de',
                 background_color: '#174C5B',
                 theme_color: '#174C5B',
                 display: 'minimal-ui',
