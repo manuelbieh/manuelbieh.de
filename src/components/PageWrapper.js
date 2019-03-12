@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import { Grid, Row, Column } from '@manuel-bieh/ui/es';
+import { Grid, Column } from '@manuel-bieh/ui/es';
 import { setContext } from '../components/PageContext';
 import Layout from './Layout';
 
@@ -14,13 +14,11 @@ const PageWrapper = ({ children, title }: PropsT) => (
     <Layout>
         {title && <Helmet title={title} />}
         <Grid>
-            <Row>
-                <Column>
-                    <h1>{title}</h1>
-                </Column>
-            </Row>
-            {children}
+            <Column>
+                <h1>{title}</h1>
+            </Column>
         </Grid>
+        {children}
     </Layout>
 );
 

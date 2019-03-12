@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { Column, Row } from '@manuel-bieh/ui/es';
+import { Column, Grid } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
 // import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
@@ -11,7 +11,7 @@ type PropsT = {
 
 const Legal = ({ t, ...props }: PropsT) => (
     <PageWrapper title={t('legal.title')} {...props}>
-        <Row>
+        <Grid>
             <Column xs={12}>
                 {t('legal.note') && <p>{t('legal.note')}</p>}
                 <h2>Angaben gemäß § 5 TMG</h2>
@@ -58,7 +58,7 @@ const Legal = ({ t, ...props }: PropsT) => (
                     <li>Datum und Uhrzeit des Abrufs,</li>
                     <li>übertragene Datenmenge,</li>
                     <li>Meldung über erfolgreichen Abruf,</li>
-                    <li>Browsertyp nebst Version,</li>
+                    <li>BGridsertyp nebst Version,</li>
                     <li>das Betriebssystem des Nutzers,</li>
                     <li>Referrer URL (die zuvor besuchte Seite),</li>
                     <li>IP-Adresse und der anfragende Provider.</li>
@@ -105,7 +105,7 @@ const Legal = ({ t, ...props }: PropsT) => (
                     Grafiken von anderen Webseiten eingebunden werden. Dies setzt immer voraus, dass
                     die Anbieter dieser Inhalte (nachfolgend bezeichnet als „Dritt-Anbieter“) die
                     IP-Adresse der Nutzer wahr nehmen. Denn ohne die IP-Adresse, könnten sie die
-                    Inhalte nicht an den Browser des jeweiligen Nutzers senden. Die IP-Adresse ist
+                    Inhalte nicht an den BGridser des jeweiligen Nutzers senden. Die IP-Adresse ist
                     damit für die Darstellung dieser Inhalte erforderlich. Wir bemühen uns nur
                     solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich
                     zur Auslieferung der Inhalte verwenden. Jedoch haben wir keinen Einfluss darauf,
@@ -128,7 +128,7 @@ const Legal = ({ t, ...props }: PropsT) => (
                     im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse
                     mit anderen Daten, die von Google gespeichert werden, in Verbindung bringen. Sie
                     können die Installation der Cookies durch eine entsprechende Einstellung Ihrer
-                    Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in
+                    BGridser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in
                     diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll
                     umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit
                     der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor
@@ -143,7 +143,7 @@ const Legal = ({ t, ...props }: PropsT) => (
                     Aufbewahrungspflicht entgegensteht.
                 </p>
             </Column>
-        </Row>
+        </Grid>
     </PageWrapper>
 );
 

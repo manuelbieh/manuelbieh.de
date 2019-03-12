@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { ClientLogos, Column, Row } from '@manuel-bieh/ui/es';
+import { ClientLogos, Column, Grid } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
 // import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
@@ -11,7 +11,7 @@ type PropsT = {
 
 const Clients = ({ t, ...context }: PropsT) => (
     <PageWrapper title={t('clients.title')} {...context}>
-        <Row>
+        <Grid>
             <Column xs={12}>
                 {t('clients.intro').map((text) => (
                     <p key={text} dangerouslySetInnerHTML={{ __html: text }} />
@@ -23,7 +23,7 @@ const Clients = ({ t, ...context }: PropsT) => (
                     <small>{t('clients.note')}</small>
                 </p>
             </Column>
-        </Row>
+        </Grid>
     </PageWrapper>
 );
 

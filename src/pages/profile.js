@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { DataTable, Column, Row } from '@manuel-bieh/ui/es';
+import { DataTable, Column, Grid } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';
 import css from './profile.module.css';
@@ -55,7 +55,7 @@ const educationDataToDataTable = (items, t) =>
 
 const Profile = ({ t, ...props }: PropsT) => (
     <PageWrapper title={t('profile.title')} {...props}>
-        <Row>
+        <Grid>
             <Column xs={12} lg={8}>
                 {(t('profile.intro') || []).map((text) => (
                     <p key={text} dangerouslySetInnerHTML={{ __html: text }} />
@@ -67,8 +67,8 @@ const Profile = ({ t, ...props }: PropsT) => (
                     alt="Photo Manuel Bieh"
                 />
             </Column>
-        </Row>
-        <Row>
+        </Grid>
+        <Grid>
             <Column>
                 <h2>{t('profile.sections.work.headline')}</h2>
                 <DataTable
@@ -121,7 +121,7 @@ const Profile = ({ t, ...props }: PropsT) => (
                     {t('cv:skills.economic.basic').join(', ')}
                 </p>
             </Column>
-        </Row>
+        </Grid>
     </PageWrapper>
 );
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Column, Row } from '@manuel-bieh/ui/es';
+import { Column, Grid } from '@manuel-bieh/ui/es';
 import { Trans } from 'react-i18next';
 import { Link, withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';
 
 const IndexPage = ({ t, ...context }) => (
     <PageWrapper title={t('home.title')} {...context}>
-        <Row>
+        <Grid>
             <Column xs={12} lg={8}>
                 <p dangerouslySetInnerHTML={{ __html: t('home.text.0') }} />
                 <p>
@@ -29,7 +29,7 @@ const IndexPage = ({ t, ...context }) => (
                     alt="Photo Manuel Bieh"
                 />
             </Column>
-        </Row>
+        </Grid>
     </PageWrapper>
 );
 

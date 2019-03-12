@@ -9,7 +9,7 @@ module.exports = {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: 'manuel-bieh',
-                short_name: 'Manuel',
+                short_name: 'Manuel Bieh',
                 start_url: '/',
                 background_color: '#174C5B',
                 theme_color: '#174C5B',

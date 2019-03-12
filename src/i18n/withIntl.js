@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import i18next from './config';
-import { I18nextProvider, withNamespaces } from 'react-i18next';
+import { I18nextProvider, withTranslation } from 'react-i18next';
 
 export default (ns = 'translations') => (WrappedComponent) => {
-    WrappedComponent = withNamespaces(ns)(WrappedComponent);
+    WrappedComponent = withTranslation(ns)(WrappedComponent);
     class withIntl extends Component {
         render() {
             const { pageContext } = this.props;
