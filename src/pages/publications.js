@@ -2,8 +2,8 @@
 import React from 'react';
 import { Grid, Column } from '@manuel-bieh/ui/es';
 import { Link, withIntl } from '../i18n';
-// import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
+import Publication from '../components/Publication';
 import css from './publications.module.css';
 
 type PropsT = {
@@ -17,6 +17,20 @@ const Publications = ({ t, ...context }: PropsT) => (
                 <h2>{t('publications.book')}</h2>
             </Column>
         </Grid>
+        <Publication
+            title="React – lernen und verstehen"
+            image={require('../../assets/img/publications/react-lernen.png')}
+            description={
+                <p>
+                    React hat die Frontend-Entwicklung in den letzten Jahren wie keine andere
+                    Library im Sturm erobert. Heute gibt es kaum eine Metrik in der React nicht
+                    vorne liegt: Downloadzahlen, Beliebtheit, Einsatzmöglichkeiten. Mit „React
+                    lernen und verstehen“ steigt der Leser tief ein in die Entwicklung moderner
+                    Frontend-Anwendungen mit Hilfe von React.
+                </p>
+            }
+            meta={'Selbstverlag, Berlin, 317 Seiten, Mai 2019'}
+        />
         <Grid className={css.publication}>
             <Column xs={12} md={4} lg={3} xl={2}>
                 <img src={require('../../assets/img/publications/mobiles-webdesign.png')} />
