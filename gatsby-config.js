@@ -4,6 +4,7 @@ module.exports = {
     },
     plugins: [
         // 'gatsby-plugin-remove-trailing-slashes',
+        'gatsby-plugin-typescript',
         'gatsby-plugin-react-helmet',
         {
             resolve: `gatsby-plugin-manifest`,

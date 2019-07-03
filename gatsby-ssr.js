@@ -1,12 +1,6 @@
-// @flow
 import React from 'react';
 import { PageContext } from './src/components/PageContext';
 
-type Props = {
-    element: React.Element,
-    props: any,
-};
-
-export const wrapPageElement = ({ element, props }: Props) => (
+export const wrapPageElement = ({ element, props }) => (
     <PageContext.Provider value={{ ...props }}>{element}</PageContext.Provider>
 );

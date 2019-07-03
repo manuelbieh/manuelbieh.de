@@ -1,4 +1,3 @@
-// @flow
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { Grid, Column } from '@manuel-bieh/ui/es';
@@ -6,8 +5,8 @@ import { setContext } from '../components/PageContext';
 import Layout from './Layout';
 
 type PropsT = {
-    children: any,
-    title: string,
+    children: any;
+    title: string;
 };
 
 const PageWrapper = ({ children, title }: PropsT) => (

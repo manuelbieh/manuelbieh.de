@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import { Column, Grid } from '@manuel-bieh/ui/es';
 import { withIntl } from '../i18n';
@@ -6,7 +5,7 @@ import { withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';
 
 type PropsT = {
-    t: (string) => string | string[],
+    t: (key: string) => string | string[];
 };
 
 const Legal = ({ t, ...props }: PropsT) => (

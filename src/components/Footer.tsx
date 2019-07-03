@@ -1,13 +1,12 @@
-// @flow
 import React from 'react';
 import { withIntl, Link } from '../i18n';
 import { Grid, Column, Footer, SocialMediaIcons } from '@manuel-bieh/ui/es';
 
-type PropsT = {
-    t: (string) => string,
+type Props = {
+    t: (key: string) => string;
 };
 
-const PageFooter = ({ t }: PropsT) => (
+const PageFooter = ({ t }: Props) => (
     <Footer>
         <Grid centered>
             <Column xs={12} textAlign="center">

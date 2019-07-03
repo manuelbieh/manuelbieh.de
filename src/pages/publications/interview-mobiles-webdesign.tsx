@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import { withIntl } from '../../i18n';
 // import { setContext } from '../../components/PageContext';

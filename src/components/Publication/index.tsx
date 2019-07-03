@@ -5,11 +5,11 @@ import { Link, withIntl } from '../../i18n';
 import css from './publications.module.css';
 
 type Props = {
-    image: string,
-    title: string,
-    description: string,
-    meta?: string,
-    url?: string,
+    image: string;
+    title: string;
+    description: string;
+    meta?: string;
+    url?: string;
 };
 
 const Publication = ({ image, title, description, meta, url }: Props) => {

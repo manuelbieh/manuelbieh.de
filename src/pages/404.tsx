@@ -4,7 +4,11 @@ import { withIntl } from '../i18n';
 // import { setContext } from '../components/PageContext';
 import PageWrapper from '../components/PageWrapper';
 
-const NotFoundPage = ({ t, ...context }) => (
+type Props = {
+    t: (key: string) => string;
+};
+
+const NotFoundPage = ({ t, ...context }: Props) => (
     <PageWrapper title={t('404.title')} {...context}>
         <Grid>
             <Column>

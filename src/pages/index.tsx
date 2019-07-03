@@ -4,7 +4,13 @@ import { Trans } from 'react-i18next';
 import { Link, withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';
 
-const IndexPage = ({ t, ...context }) => (
+type Props = {
+    t: any;
+};
+
+// const IndexPage = () => 'Hallo Welt';
+
+const IndexPage = ({ t, ...context }: Props) => (
     <PageWrapper title={t('home.title')} {...context}>
         <Grid>
             <Column xs={12} lg={8}>
@@ -17,7 +23,7 @@ const IndexPage = ({ t, ...context }) => (
                 </p>
                 <p>{t('home.text.2')}</p>
                 <ul>
-                    {t('home.services').map((item) => (
+                    {t('home.services').map((item: string) => (
                         <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
                     ))}
                 </ul>

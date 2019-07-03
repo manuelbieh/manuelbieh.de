@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import { Grid, Column } from '@manuel-bieh/ui/es';
 import { Link, withIntl } from '../i18n';
@@ -7,7 +6,7 @@ import Publication from '../components/Publication';
 import css from './publications.module.css';
 
 type PropsT = {
-    t: (string) => string | string[],
+    t: any;
 };
 
 const Publications = ({ t, ...context }: PropsT) => (
