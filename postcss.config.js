@@ -9,9 +9,7 @@ module.exports = {
         require('postcss-custom-media')({
             importFrom: 'node_modules/@manuel-bieh/ui/es/media.css',
         }),
-        require('autoprefixer')({
-            browsers: ['last 3 versions', 'ie >= 9', 'Edge >= 13'],
-        }),
+        require('autoprefixer')(),
     ],
     sourceMap: true,
 };
