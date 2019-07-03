@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid, Column } from '@manuel-bieh/ui/es';
+import { Grid, Column } from '@manuel-bieh/ui/dist/es';
 import { Link, withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';
 import Publication from '../components/Publication';
-import css from './publications.module.css';
+import css from './Publications.module.css';
 
 type PropsT = {
     t: any;

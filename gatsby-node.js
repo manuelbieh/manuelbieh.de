@@ -33,7 +33,7 @@ exports.onCreatePage = ({ page, actions }) => {
     page.path = removeTrailingSlash(page.path);
 
     return new Promise((resolve) => {
-        const redirect = path.resolve('./src/i18n/Redirect.js');
+        const redirect = path.resolve('./src/i18n/Redirect.tsx');
         const redirectPage = {
             ...page,
             component: redirect,

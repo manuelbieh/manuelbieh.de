@@ -1,8 +1,8 @@
 import React from 'react';
-import { withContext } from './PageContext';
+import { Grid, Column, Header } from '@manuel-bieh/ui/dist/es';
 import { Link as GatsbyLink } from 'gatsby';
 import { Link, languages, withIntl } from '../i18n';
-import { Grid, Column, Header } from '@manuel-bieh/ui/es';
+import { withContext } from './PageContext';
 import css from './Header.module.css';
 
 type Props = {
@@ -14,7 +14,7 @@ type Props = {
     [prop: string]: any;
 };
 
-const routes = {
+const routes: { [route: string]: string } = {
     home: '/',
     profile: '/profile',
     clients: '/clients',

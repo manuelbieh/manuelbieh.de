@@ -1,6 +1,6 @@
 import React from 'react';
+import { Grid, Column, Footer, SocialMediaIcons } from '@manuel-bieh/ui/dist/es';
 import { withIntl, Link } from '../i18n';
-import { Grid, Column, Footer, SocialMediaIcons } from '@manuel-bieh/ui/es';
 
 type Props = {
     t: (key: string) => string;

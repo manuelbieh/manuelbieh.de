@@ -1,5 +1,5 @@
 import React from 'react';
-import { Column, Grid } from '@manuel-bieh/ui/es';
+import { Column, Grid } from '@manuel-bieh/ui/dist/es';
 import { Trans } from 'react-i18next';
 import { Link, withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataTable, Column, Grid } from '@manuel-bieh/ui/es';
+import { DataTable, Column, Grid } from '@manuel-bieh/ui/dist/es';
 import { withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';
 import css from './profile.module.css';

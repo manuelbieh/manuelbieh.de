@@ -7,7 +7,7 @@ module.exports = {
         }),
         require('postcss-nested')(),
         require('postcss-custom-media')({
-            importFrom: 'node_modules/@manuel-bieh/ui/es/media.css',
+            importFrom: 'node_modules/@manuel-bieh/ui/dist/es/media.css',
         }),
         require('autoprefixer')(),
     ],

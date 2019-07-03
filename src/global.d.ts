@@ -48,5 +48,6 @@ declare module '*.module.css' {
     export default css;
 }
 
+declare module '*.css';
 declare module 'browser-lang';
-declare module '@manuel-bieh/ui/es';
+declare module '@manuel-bieh/ui/dist/es';
