@@ -64,11 +64,13 @@ exports.onCreatePage = ({ page, actions }) => {
                 },
             };
 
-            if (localePage.path === '/de/404.html') {
-                localePage.matchPath = '/de/*';
-            } else if (localePage.path === '/en/404.html') {
-                localePage.matchPath = '/en/*';
-            }
+            // This breaks in Gatsby 2.9.0:
+            // Localize custom error pages
+            // if (localePage.path === '/de/404.html') {
+            //     localePage.matchPath = '/de/*';
+            // } else if (localePage.path === '/en/404.html') {
+            //     localePage.matchPath = '/en/*';
+            // }
 
             createPage(localePage);
         });
