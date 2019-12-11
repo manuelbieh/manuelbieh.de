@@ -42,7 +42,7 @@
         "eslint-plugin-security": "1.4.0",
         "eslint-plugin-unicorn": "9.1.0",
         "flow-bin": "^0.102.0",
-        "gatsby": "^2.13.3",
+        "gatsby": "^2.18.10",
         "gatsby-plugin-manifest": "^2.2.1",
         "gatsby-plugin-nprogress": "^2.1.0",
         "gatsby-plugin-offline": "^2.2.0",
