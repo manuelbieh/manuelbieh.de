@@ -29,4 +29,5 @@ jobs:
             - run: |
                   echo "export ts=$(date +%Y%m%d-%H%M%S)" >> $BASH_ENV
                   echo "export target=/var/www/sites/manuelbieh.de" >> $BASH_ENV
+            - run: ssh-keyscan manuelbieh.de >> ~/.ssh/known_hosts
             - run: ssh circleci@manuelbieh.de uname -a
