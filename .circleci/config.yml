@@ -33,7 +33,7 @@ jobs:
                   command: sudo apt-get install zip
 
             - run:
-                  name: Create deploy zipfile
+                  name: Create release zipfile
                   command: yarn zip
 
             - run:
@@ -47,10 +47,12 @@ jobs:
                   command: ssh-keyscan manuelbieh.de >> ~/.ssh/known_hosts
 
             - run:
-                  name: Do some server magic
+                  name: Deploy
                   command: |
                       ssh circleci@manuelbieh.de rm -rf ${tmpfolder}
                       ssh circleci@manuelbieh.de mkdir -p ${tmpfolder}
                       ssh circleci@manuelbieh.de mkdir -p ${target}/releases/${ts}
                       scp ~/repo/release.zip circleci@manuelbieh.de:${target}/tmp
                       ssh circleci@manuelbieh.de unzip ${tmpfolder}/release.zip -d ${target}/releases/${ts}
+                      ssh circleci@manuelbieh.de rm -rf ${target}/htdocs
+                      ssh circleci@manuelbieh.de ln -s ${target}/releases/${ts} ${target}/htdocs
