@@ -29,5 +29,4 @@ jobs:
             - run: |
                   echo "export ts=$(date +%Y%m%d-%H%M%S)" >> $BASH_ENV
                   echo "export target=/var/www/sites/manuelbieh.de" >> $BASH_ENV
-            - run: echo $ts
-            - run: echo $target
+            - run: ssh circleci@manuelbieh.de uname -a
