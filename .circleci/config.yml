@@ -15,7 +15,9 @@ jobs:
                       # fallback to using the latest cache if no exact match is found
                       - v1-dependencies-
 
-            - run: yarn install
+            - run:
+                  name: Install dependencies
+                  command: yarn install
 
             - save_cache:
                   paths:
@@ -43,6 +45,7 @@ jobs:
             - run:
                   name: Add host to known_hosts
                   command: ssh-keyscan manuelbieh.de >> ~/.ssh/known_hosts
+
             - run:
                   name: Do some server magic
                   command: |
