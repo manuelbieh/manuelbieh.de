@@ -52,5 +52,5 @@ jobs:
                       ssh circleci@manuelbieh.de rm -rf ${tmpfolder}
                       ssh circleci@manuelbieh.de mkdir -p ${tmpfolder}
                       ssh circleci@manuelbieh.de mkdir -p ${target}/releases/${ts}
-                      ssh circleci@manuelbieh.de scp ./release.zip circleci@manuelbieh.de:${target}/tmp
+                      scp ~/repo/release.zip circleci@manuelbieh.de:${target}/tmp
                       ssh circleci@manuelbieh.de unzip ${tmpfolder}/release.zip -d ${target}/releases/${ts}
