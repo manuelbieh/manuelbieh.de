@@ -27,7 +27,7 @@ jobs:
             # - run: yarn zip
             #   - run: scp release.zip circleci@manuelbieh.de:/path/on/server/
             - run: |
-                  export ts=$(date +%Y%m%d-%H%M%S)
-                  export target=/var/www/sites/manuelbieh.de
+                  echo "export ts=$(date +%Y%m%d-%H%M%S)" >> $BASH_ENV
+                  echo "export target=/var/www/sites/manuelbieh.de" >> $BASH_ENV
             - run: echo $ts
             - run: echo $target
