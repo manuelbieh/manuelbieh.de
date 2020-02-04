@@ -1,3 +1,10 @@
 module.exports = {
-    extends: ['wiremore', 'wiremore/react', 'wiremore/typescript'],
+    extends: [
+        '@werkzeugkiste',
+        '@werkzeugkiste/eslint-config/react',
+        '@werkzeugkiste/eslint-config/typescript',
+    ],
+    rules: {
+        'import/no-unresolved': 2,
+    },
 };

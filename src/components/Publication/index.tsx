@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { Grid, Column } from '@manuel-bieh/ui/dist/es';
 import { Link, withIntl } from '../../i18n';
-import css from './Publications.module.css';
+import css from './publications.module.css';
 
 type Props = {
     image: string;

@@ -1,8 +1,8 @@
 import React from 'react';
+import Layout from 'components/Layout';
 import { withIntl } from '../../i18n';
 // import { setContext } from '../../components/PageContext';
-import Layout from 'components/Layout';
-import css from '../Publications.module.css';
+import css from '../publications.module.css';
 
 const Article = () => (
     <Layout>
