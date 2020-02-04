@@ -33,7 +33,7 @@ exports.onCreatePage = ({ page, actions }) => {
     page.path = removeTrailingSlash(page.path);
 
     return new Promise((resolve) => {
-        const redirect = path.resolve('./src/i18n/Redirect.js');
+        const redirect = path.resolve('./src/i18n/Redirect.tsx');
         const redirectPage = {
             ...page,
             component: redirect,
@@ -45,6 +45,7 @@ exports.onCreatePage = ({ page, actions }) => {
                 redirectPage: page.path,
             },
         };
+
         createPage(redirectPage);
 
         if (page.path !== oldPage.path) {
@@ -64,13 +65,14 @@ exports.onCreatePage = ({ page, actions }) => {
                 },
             };
 
-            // This breaks in Gatsby 2.9.0:
             // Localize custom error pages
-            // if (localePage.path === '/de/404.html') {
-            //     localePage.matchPath = '/de/*';
-            // } else if (localePage.path === '/en/404.html') {
-            //     localePage.matchPath = '/en/*';
-            // }
+            // This breaks in Gatsby 2.9.0:
+            // https://github.com/gatsbyjs/gatsby/issues/15101
+            if (localePage.path === '/de/404.html') {
+                localePage.matchPath = '/de/*';
+            } else if (localePage.path === '/en/404.html') {
+                localePage.matchPath = '/en/*';
+            }
 
             createPage(localePage);
         });

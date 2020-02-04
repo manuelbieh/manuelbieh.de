@@ -1,12 +1,13 @@
-// @flow
 import React from 'react';
 // import React, { PureComponent } from 'react';
 import { withPrefix } from 'gatsby-link';
 import browserLang from 'browser-lang';
-import { languages } from './index';
+import { languages } from '.';
 
 type PropsT = {
-    location: string,
+    location: {
+        [prop: string]: any;
+    };
 };
 
 const Redirect = ({ location }: PropsT) => {

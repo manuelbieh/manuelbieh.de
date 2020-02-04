@@ -1,16 +1,30 @@
-// @flow
 import React from 'react';
-import { DataTable, Column, Grid } from '@manuel-bieh/ui/es';
+import { DataTable, Column, Grid } from '@manuel-bieh/ui/dist/es';
 import { withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';
 import css from './profile.module.css';
 
 type PropsT = {
-    t: (string) => string | string[],
+    t: any;
 };
 
-const workDataToDataTable = (items, t) =>
-    items.reduce((rows, item) => {
+type WorkItem = {
+    company: string;
+    location: string;
+    position: string;
+    startDate: string;
+    endDate: string;
+};
+
+type EducationItem = {
+    institution: string;
+    studyType: string;
+    startDate: string;
+    endDate: string;
+};
+
+const workDataToDataTable = (items: WorkItem[], t: any) =>
+    items.reduce((rows: any[], item) => {
         const { company, location, position, startDate, endDate } = item;
         const start = endDate ? startDate.substring(0, 7) : t('time.since');
         const end = endDate ? endDate.substring(0, 7) : startDate.substring(0, 7);
@@ -31,8 +45,8 @@ const workDataToDataTable = (items, t) =>
         return rows;
     }, []);
 
-const educationDataToDataTable = (items, t) =>
-    items.reduce((rows, item) => {
+const educationDataToDataTable = (items: EducationItem[], t: any) =>
+    items.reduce((rows: any[], item) => {
         const { institution, studyType, startDate, endDate } = item;
         const start = endDate ? startDate.substring(0, 7) : t('time.since');
         const end = endDate ? endDate.substring(0, 7) : startDate.substring(0, 7);
@@ -57,7 +71,7 @@ const Profile = ({ t, ...props }: PropsT) => (
     <PageWrapper title={t('profile.title')} {...props}>
         <Grid>
             <Column xs={12} lg={8}>
-                {(t('profile.intro') || []).map((text) => (
+                {(t('profile.intro') || []).map((text: string) => (
                     <p key={text} dangerouslySetInnerHTML={{ __html: text }} />
                 ))}
             </Column>
@@ -84,7 +98,7 @@ const Profile = ({ t, ...props }: PropsT) => (
 
                 <h2>{t('profile.sections.qualifications.headline')}</h2>
                 <ul>
-                    {t('cv:qualifications').map((item) => (
+                    {t('cv:qualifications').map((item: string) => (
                         <li key={item}>{item}</li>
                     ))}
                 </ul>

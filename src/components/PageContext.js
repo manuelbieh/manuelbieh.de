@@ -1,5 +1,6 @@
+// This file is used by Gatsby and must therefor (?) be in plain JS
 import React from 'react';
-import '@manuel-bieh/ui/es/index.module.css';
+import '@manuel-bieh/ui/dist/es/index.module.css';
 
 const getDisplayName = (WrappedComponent) => {
     return WrappedComponent.displayName || WrappedComponent.name || 'Component';

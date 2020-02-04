@@ -1,14 +1,10 @@
-// @flow
 import React, { Component } from 'react';
 import i18next from './config';
 import { I18nextProvider, withTranslation } from 'react-i18next';
 
-export default (ns = 'translations') => (WrappedComponent) => {
+export default (ns = 'translations') => (WrappedComponent: any) => {
     WrappedComponent = withTranslation(ns)(WrappedComponent);
-    type PropsT = {
-        pageContext: any,
-    };
-    class withIntl extends Component<PropsT> {
+    class withIntl extends Component<any> {
         render() {
             const { pageContext } = this.props;
 
