@@ -1,18 +1,17 @@
-// @flow
 import React from 'react';
-import { withContext } from './PageContext';
 import { Link as GatsbyLink } from 'gatsby';
+import { Grid, Column, Header } from '@manuel-bieh/ui/dist/es';
 import { Link, languages, withIntl } from '../i18n';
-import { Grid, Column, Header } from '@manuel-bieh/ui/es';
+import { withContext } from './PageContext';
 import css from './Header.module.css';
 
-type PropsT = {
-    t: (string) => string,
-    language: string,
+type Props = {
+    t: (key: string) => string;
+    language: string;
     pageContext: {
-        originalPath: string,
-    },
-    [string]: any,
+        originalPath: string;
+    };
+    [prop: string]: any;
 };
 
 const routes = {
@@ -23,12 +22,12 @@ const routes = {
     publications: '/publications',
 };
 
-const NavItems = {
+const NavItems: { [lang: string]: any } = {
     de: ['home', 'profile', 'clients', 'technologies', 'publications'],
-    en: ['home', 'profile', 'clients', 'technologies'],
+    en: ['home', 'profile', 'clients', 'technologies', 'publications'],
 };
 
-const PageHeader = ({ t, language = 'en', pageContext: { originalPath } }: PropsT) => (
+const PageHeader = ({ t, language = 'en', pageContext: { originalPath } }: Props) => (
     <Header className={css.wrapper}>
         <Grid centered>
             <Column xs={12}>
@@ -63,8 +62,9 @@ const PageHeader = ({ t, language = 'en', pageContext: { originalPath } }: Props
                                 )
                             )}
                         </li>
-                        {NavItems[language].map((item) => (
+                        {NavItems[language].map((item: string) => (
                             <li key={item}>
+                                {/* eslint-disable-next-line security/detect-object-injection */}
                                 <Link to={routes[item]} activeClassName={css.active}>
                                     {t(`navigation.${item}`)}
                                 </Link>

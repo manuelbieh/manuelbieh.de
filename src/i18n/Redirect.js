@@ -1,15 +1,9 @@
-// @flow
 import React from 'react';
-// import React, { PureComponent } from 'react';
 import { withPrefix } from 'gatsby-link';
 import browserLang from 'browser-lang';
 import { languages } from './index';
 
-type PropsT = {
-    location: string,
-};
-
-const Redirect = ({ location }: PropsT) => {
+const Redirect = ({ location }) => {
     const langKeys = Object.keys(languages);
     const { pathname } = location;
 

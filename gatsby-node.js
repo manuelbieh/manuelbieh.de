@@ -30,7 +30,7 @@ exports.onCreatePage = ({ page, actions }) => {
     }
 
     const oldPage = Object.assign({}, page);
-    page.path = removeTrailingSlash(page.path);
+    // page.path = removeTrailingSlash(page.path);
 
     return new Promise((resolve) => {
         const redirect = path.resolve('./src/i18n/Redirect.js');
@@ -45,6 +45,7 @@ exports.onCreatePage = ({ page, actions }) => {
                 redirectPage: page.path,
             },
         };
+
         createPage(redirectPage);
 
         if (page.path !== oldPage.path) {
@@ -64,11 +65,11 @@ exports.onCreatePage = ({ page, actions }) => {
                 },
             };
 
-            if (localePage.path === '/de/404.html') {
-                localePage.matchPath = '/de/*';
-            } else if (localePage.path === '/en/404.html') {
-                localePage.matchPath = '/en/*';
-            }
+            // if (localePage.path === '/de/404.html') {
+            //     localePage.matchPath = '/de/*';
+            // } else if (localePage.path === '/en/404.html') {
+            //     localePage.matchPath = '/en/*';
+            // }
 
             createPage(localePage);
         });

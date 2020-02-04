@@ -1,4 +1,5 @@
-@import '@manuel-bieh/ui/es/variables.css';
+/* @import '@manuel-bieh/ui/dist/es/fonts.css'; */
+@import '@manuel-bieh/ui/dist/es/variables.css';
 
 @font-face {
     font-family: Classic Round;

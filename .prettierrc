@@ -1,6 +1,6 @@
-printWidth: 100
-singleQuote: true
-tabWidth: 4
-trailingComma: es5
-semi: true
-arrowParens: always
+{
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always"
+}
