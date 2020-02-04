@@ -14,7 +14,7 @@ type Props = {
     [prop: string]: any;
 };
 
-const routes = {
+const routes: { [route: string]: string } = {
     home: '/',
     profile: '/profile',
     clients: '/clients',

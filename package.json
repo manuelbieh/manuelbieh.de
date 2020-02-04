@@ -10,6 +10,7 @@
     "scripts": {
         "start": "yarn develop",
         "build": "gatsby build",
+        "lint:js": "eslint src",
         "develop": "gatsby develop",
         "zip": "cd public/ && zip -r ../release.zip .",
         "format": "prettier --write '**/*.js'",

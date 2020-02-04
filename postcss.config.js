@@ -16,6 +16,7 @@ module.exports = {
         require('autoprefixer')({
             browsers: ['last 3 versions', 'ie >= 9', 'Edge >= 13'],
         }),
+        require('autoprefixer')(),
     ],
     sourceMap: true,
 };

@@ -50,3 +50,5 @@ declare module '*.module.css' {
 
 declare module 'browser-lang';
 declare module '@manuel-bieh/ui/dist/es';
+declare module '*.css';
+// declare module '@manuel-bieh/ui/dist/es';
