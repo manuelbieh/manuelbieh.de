@@ -25,7 +25,7 @@
         "@babel/preset-flow": "^7.0.0",
         "@babel/preset-typescript": "^7.3.3",
         "@manuel-bieh/cv": "^1.0.6",
-        "@manuel-bieh/ui": "^2.2.0",
+        "@manuel-bieh/ui": "^2.3.0",
         "@types/react": "^16.8.23",
         "@types/react-dom": "^16.8.4",
         "@types/react-helmet": "^5.0.8",
