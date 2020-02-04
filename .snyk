@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - browser-lang > lodash:
+        patched: '2020-02-04T20:05:39.022Z'
+    - '@manuel-bieh/ui > @storybook/addon-storysource > @storybook/theming > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-02-04T20:05:39.022Z'
+    - '@manuel-bieh/ui > @storybook/addon-storysource > @storybook/components > @storybook/theming > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-02-04T20:05:39.022Z'
+    - '@manuel-bieh/ui > @storybook/addon-storysource > @storybook/addons > @storybook/api > @storybook/theming > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-02-04T20:05:39.022Z'
+    - '@manuel-bieh/ui > @storybook/addon-storysource > @storybook/source-loader > @storybook/addons > @storybook/api > @storybook/theming > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-02-04T20:05:39.022Z'
+    - '@manuel-bieh/ui > @storybook/addon-storysource > @storybook/source-loader > @storybook/addons > @storybook/api > @storybook/theming > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-02-04T20:05:39.022Z'
