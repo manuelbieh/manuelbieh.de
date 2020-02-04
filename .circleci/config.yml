@@ -30,3 +30,4 @@ jobs:
                   export ts=$(date +%Y%m%d-%H%M%S)
                   export target=/var/www/sites/manuelbieh.de
             - run: echo $ts
+            - run: echo $target
