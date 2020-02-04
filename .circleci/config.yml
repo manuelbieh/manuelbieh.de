@@ -22,12 +22,32 @@ jobs:
                       - node_modules
                   key: v1-dependencies-{{ checksum "package.json" }}
 
-            # - run: yarn build
-            - run: sudo apt-get install zip
-            # - run: yarn zip
-            #   - run: scp release.zip circleci@manuelbieh.de:/path/on/server/
-            - run: |
-                  echo "export ts=$(date +%Y%m%d-%H%M%S)" >> $BASH_ENV
-                  echo "export target=/var/www/sites/manuelbieh.de" >> $BASH_ENV
-            - run: ssh-keyscan manuelbieh.de >> ~/.ssh/known_hosts
-            - run: ssh circleci@manuelbieh.de uname -a
+            - run:
+                  name: Build
+                  command: yarn build
+
+            - run:
+                  name: Install zip
+                  command: sudo apt-get install zip
+
+            - run:
+                  name: Create deploy zipfile
+                  command: yarn zip
+
+            - run:
+                  name: Set env vars
+                  command: |
+                      echo "export ts=$(date +%Y%m%d-%H%M%S)" >> $BASH_ENV
+                      echo "export tmpfolder=/var/www/sites/manuelbieh.de/tmp" >> $BASH_ENV
+                      echo "export target=/var/www/sites/manuelbieh.de" >> $BASH_ENV
+            - run:
+                  name: Add host to known_hosts
+                  command: ssh-keyscan manuelbieh.de >> ~/.ssh/known_hosts
+            - run:
+                  name: Do some server magic
+                  command: |
+                      ssh circleci@manuelbieh.de rm -rf ${tmpfolder}
+                      ssh circleci@manuelbieh.de mkdir -p ${tmpfolder}
+                      ssh circleci@manuelbieh.de mkdir -p ${target}/releases/${ts}
+                      ssh circleci@manuelbieh.de scp ./release.zip circleci@manuelbieh.de:${target}/tmp
+                      ssh circleci@manuelbieh.de unzip ${tmpfolder}/release.zip -d ${target}/releases/${ts}
