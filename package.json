@@ -44,7 +44,7 @@
         "eslint-plugin-react": "7.17.0",
         "eslint-plugin-react-hooks": "2.3.0",
         "eslint-plugin-security": "1.4.0",
-        "gatsby": "2.0.45",
+        "gatsby": "2.0.84",
         "gatsby-plugin-manifest": "^2.2.1",
         "gatsby-plugin-nprogress": "^2.1.0",
         "gatsby-plugin-offline": "^2.2.0",
