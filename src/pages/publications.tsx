@@ -1,5 +1,5 @@
-import React from 'react';
 import { Grid, Column } from '@manuel-bieh/ui/dist/es';
+import React from 'react';
 import { Link, withIntl } from '../i18n';
 import PageWrapper from '../components/PageWrapper';
 import Publication from '../components/Publication';
@@ -28,7 +28,7 @@ const Publications = ({ t, ...context }: PropsT) => (
                     Frontend-Anwendungen mit Hilfe von React.
                 </p>
             }
-            meta={'Selbstverlag, Berlin, 317 Seiten, Mai 2019'}
+            meta={'Selbstverlag, Berlin, 346 Seiten, Mai 2019'}
         />
         <Grid className={css.publication}>
             <Column xs={12} md={4} lg={3} xl={2}>
