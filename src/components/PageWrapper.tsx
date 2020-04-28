@@ -1,6 +1,6 @@
+import { Grid, Column } from '@manuel-bieh/ui/dist/es';
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import { Grid, Column } from '@manuel-bieh/ui/dist/es';
 import { setContext } from '../components/PageContext';
 import Layout from './Layout';
 
